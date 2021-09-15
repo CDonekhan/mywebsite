@@ -5,13 +5,13 @@
 /* Attributes of Headers*/
 h1 {
 
-    border:blue 4px;
+    border:skyblue 4px;
 }
 h2{
     color: white;
     letter-spacing: 5px;
     text-align: center;
-    border: Solid blue 2px;
+    border: Solid lightblue 2px;
     border-radius: 4px;
     padding: 10px;
     margin-top: 0px;
