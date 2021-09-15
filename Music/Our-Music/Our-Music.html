@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Our-Music</title>
+    <link rel="stylesheet" href="../../Sample-Page/Sample.css">
+    <link rel="stylesheet" href="Our-Music.css">
+    <meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+  </head>
+  
+  <body>
+    <div>
+      
+      <header>
+        <h1>Music</h1>
+        <nav>
+            <a href="../../index.html"><img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"></a>
+            <a href="../../Navigation-Pages/Resume-Page/Resume.html"><img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"></a>
+            <a href="../../Navigation-Pages/Contact/Contact.html"><img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links">   </a>
+             </nav>
+      </header>
+      
+      <main>
+        <section>
+          <a href= "javascript:moonlight ();"><img class= "FPic2 FPic3" src="Our-Music-Resources/moonlight-shadow.jpg" alt="Ghost in a Shell Main Character" title="Moonlight Shadow Beat"></a>
+          <a href= "javascript:minecarti ();"><img class= "FPic2 FPic3" src="Our-Music-Resources/minecraft.png" alt="Minecraft Sheep Chillin" title="Minecarti!"></a>
+        </section>
+        <div>
+         <audio id="moonlight-shadow" src="Our-Music-Resources/Background.mp3" preload="auto"></audio>
+         <audio id="minecarti" src="Our-Music-Resources/minecarti.mp3" preload="auto"></audio>
+         <script>
+           function moonlight () {
+            document.getElementById('moonlight-shadow').play();
+           }
+           function minecarti () {
+            document.getElementById('minecarti').loop = true;
+            document.getElementById('minecarti').play();
+           }
+         </script>
+        </div>
+      </main>
+      
+      <footer>
+        <p class="spacer">&copy; 2021 CDonekhan LLC</p>
+        <p><a href="#top"> Go to the top!</a></p>
+      </footer>
+      
+    </div>
+  </body>
+  
+</html>

@@ -1,0 +1,21 @@
+/*Changes specific to this page*/
+
+/*Background Color */
+div {
+    background-image: url('Our-Music-Resources/space1.jpg');
+  }
+  /* Edits attributes of a hyperlink */
+  /* Attributes of Headers*/
+  /* Edits of Classes*/
+      .FPic3 {
+        margin-top:200px;
+        margin-bottom:200px;
+        max-width:400px;
+  }
+      .FPic3:hover {
+        transform: scale(1.3) rotate(360deg);
+  }
+      .spacer {
+      margin-top:1000px;
+  }
+  
