@@ -3,4 +3,21 @@
 /*Background Color */
 /* Edits attributes of a hyperlink */
 /* Attributes of Headers*/
+h1 {
+
+    border:skyblue solid 4px;
+}
+h2{
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    border: Solid skyblue 2px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 0px;
+    }
 /* Edits of Classes*/
+.section-divide {
+
+    border:lightblue 1px dashed;  
+}
