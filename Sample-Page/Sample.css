@@ -13,7 +13,7 @@ html {
 
 /* Edits attributes of a hyperlink */
   a{
-    color: #512DC8;
+    color: skyblue;
   }
   a:hover {
     color: #C82D40;
@@ -25,11 +25,20 @@ html {
     color: white;
     letter-spacing: 5px;
     text-align: center;
-    border: Solid White 2px;
+    border: skyblue 4px solid;
     border-radius: 10px;
     padding: 20px;
     margin-top: 0px;
     }
+    h2{
+      color: white;
+      letter-spacing: 5px;
+      text-align: center;
+      border: Solid skyblue 2px;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 0px;
+      }
 /* Edits of Classes*/
   .Return-Main {
     text-align: right;
