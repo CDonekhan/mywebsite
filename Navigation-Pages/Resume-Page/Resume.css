@@ -1,0 +1,22 @@
+/*Changes specific to this page*/
+
+/*Background Color */
+/* Edits attributes of a hyperlink */
+/* Attributes of Headers*/
+h2{
+    background-color: grey;
+    padding: 5px;  
+  }
+  
+h3{
+    text-transform:uppercase;
+    
+  }
+/* Edits of Classes*/
+.Profile-Image {
+   border: solid 4px black;
+   border-radius: 50%;
+}
+.Return-Main {
+   text-align: right;
+}

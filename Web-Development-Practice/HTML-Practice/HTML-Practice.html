@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <link rel="stylesheet" href="../../Sample-Page/Sample.css">
+    <link rel="stylesheet" href="HTML-Practice.css">
+    <title>HTML Practice</title>
+  </head>
+  <body>
+    <div>
+      <header>
+          <h1>HTML Practice</h1>
+            <nav>
+            <a href="../../index.html"><img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"></a>
+            <a href="../../Navigation-Pages/Resume-Page/Resume.html"><img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"></a>
+            <a href="../../Navigation-Pages/Contact/Contact.html"><img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links">   </a>
+             </nav>
+        </header>
+        <div>
+          <h1>The section above this line is the header.</h1>
+          <h1>The section below this line is the other sections of the webpage!</h1>
+        </div>
+        <div>
+          <a href= "javascript:green ();"><img class= "FPic2 FPic3" src="HTML-Practice-Resources/green1.png" alt="Green color Image" title="Green!"></a>
+  <audio id="green" src="HTML-Practice-Resources/greenA.mp3" preload="auto"></audio>
+           <script>
+  function green () {
+              document.getElementById('green').loop = true;
+              document.getElementById('green').play();
+             }
+           </script>
+          </div>
+      <main>
+        <section>
+          <h1> Paragraphs</h1>
+              <p> This is the first paragraph of this webpage.</p>
+              <p> This is the second paragraph of this webpage.</p>
+              <p> This is the third paragraph of this webpage.</p>
+        </section>
+        <section>
+      <!-- Ordered List That Contains Numbers-->
+          <h1>Ordered List</h1>
+            <ol class=list-fix>
+              <li> This is the first element of an ordered list!</li>
+              <li> This is the second element of an ordered list!</li>
+              <li>
+                <ol>
+                  <li>This is the first element of an ordered list! This is nested inside the overall list.</li>
+                  <li>This is the second element of an ordered list! This is nested inside the overall list.</li>
+                  <li>This is the third element of an ordered list! This is nested inside the overall list.</li>
+                </ol></li>
+            </ol>
+        </section>
+        <section>
+      <!-- Unordered list that does not contain numbers-->
+            <h1>Unordered List</h1>
+            <ul class=list-fix>
+              <li> This is the first element of an unordered list!</li>
+              <li> This is the second element of an unordered list!</li>
+              <li>
+                <ul>
+                  <li>This is the first element of an unordered list! This is nested inside the overall list.</li>
+                  <li>This is the second element of an unordered list! This is nested inside the overall list.</li>
+                  <li>This is the third element of an unordered list! This is nested inside the overall list.</li>
+                </ul></li>
+            </ul>
+        </section>
+        <section>
+      <!-- Descriptive List with titles and description-->
+          <h1>Descriptive List</h1>
+              <dl class=list-fix>
+              <dt>Animal Cell</dt>
+              <dd>Eukaryotic Cell without a cell wall.</dd>
+              <dt>Plant Cell</dt>
+              <dd>Eukaryotic Cell with a cell wall.</dd>
+              <dt>Bacteria Cell</dt>
+              <dd>Prokaryotic Cell with a cell wall.</dd>
+              </dl>
+        </section>
+        <section>
+              <h1>Various Heading Sizes (This heading is h1)</h1>
+              <h2>This is an h2 heading!</h2>
+              <h3>This is an h3 heading!</h3>
+              <h4>This is an h4 heading!</h4>
+              <h5>This is an h5 heading!</h5>
+              <h6>This is an h6 heading!</h6>
+        </section>
+         <div>
+            <h1>Article Practice!</h1>
+         </div>
+       <section>
+             <p>This section has an article designation! An article is standalone content with a title and body. This article contains a header that includes the title (h2) and a paragraph giving credit to the author. An internal aside can be added to show a pulled quote. The footer at the end gives credits and additional information.
+             </p>
+         <article>
+           <header>
+              <h2>The Anatomy Of A Human</h2>
+                <p>By: Charles Booty</p>
+           </header>
+              <p>A human is made up of several organ systems. In order to maintain a stable environment inside the body, many of these organ systems need to work together.</p>
+           <!-- This is an internal asside -->
+           <aside>
+           <q>
+             This is a pulled quote from the article about body systems...
+             </q>
+           </aside>
+                <p>A few examples are the skeletomuscular system, nervous system, circulatory system, excretory system,immune system, integumentary system, and few more.</p>
+              <p>To read more about the various organ systems and their function, click this <a href="https://www.hillandponton.com/human-body-organ-systems/">link!</a></p>
+            <footer>Published: September 14, 2021</footer>
+          </article>
+         </section>
+          <section>
+            <h1>Aside Practice!
+            </h1>
+            <p> This sections uses the aside markup! This section is for resources that may be related to the contect on the page but is simply just an extra resource. This usually only applies to asides that are outside of an article.</p>
+          <aside>
+            <h2>References and Potential Helpful Articles
+            </h2>
+            <p>This is a textbook on human anatomy that can be helpful. Here is the link: https://openstax.org/details/books/anatomy-and-physiology</p>
+            <p>This is a article on homeostasis in biological organisms that may be helpful. Here is the link: https://www.scientificamerican.com/article/what-is-homeostasis/</p>
+            </aside>
+          </section>
+         <section>  
+              <h1>Links</h1>
+                <nav>
+                <p> This section has a navigation designation! Navigation is to designate locations where multiple links to other websites are listed such as contact info. Also there will be an example of navigation to another page of the website. One example uses the pure url and the other uses site navigation.</p>
+                <p><a href="https://www.youtube.com/watch?v=3egXqihisFQ">This is a special link that redirects to another page!</a></p>
+                <p>(Instrumental Math Rock)</p>
+                <p><a href="https://www.youtube.com/watch?v=D2_r4q2imnQ" target="_blank">This is a special link that redirects to another page on another tab!</a></p>
+                <p><a href="http://port-80-rbs2j8mffr.treehouse-app.com/Just-For-Fun/Buttons/Buttons.html">Url for buttons using direct link</a></p>
+                <p><a href="../../Just-For-Fun/Buttons/Buttons.html">Url for buttons using directory</a></p>
+                </nav>
+                
+          </section>
+          <section>
+            <h1>
+              Div/Main/Block Quote
+            </h1>
+              <p> This section just discusses div/main/BlockQuote. Div is used for portion sections that are not clearly labeled into a section. This is where div is given. Div also wraps the body section be better css application. Main wraps the main portion of the webpage. This excludes the footer and header. This also excludes any content that can be percieved as extra such as an external aside.The block quote is for large quotes or lists of quotes. There are three examples of block quotes and their formats below. 
+              </p>
+            <blockquote cite="https://www.facebook.com/zuck/posts/10101319050523971">
+              "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. The future is coming." - Mark Zuckerberg
+            </blockquote>
+            <blockquote>
+              "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. The future is coming." - <cite><a href="https://www.facebook.com/zuck/posts/10101319050523971">Mark Zuckerberg</a></cite>
+            </blockquote>
+            <blockquote>
+              "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. The future is coming." 
+              <footer>- <cite><a href="https://www.facebook.com/zuck/posts/10101319050523971">Mark Zuckerberg</a></cite>
+              </footer>
+            </blockquote>
+          </section>
+         <div>
+            <h1>The section below this line is the footer!</h1>
+         </div>
+      </main>
+        <footer>
+            <p>&copy; 2021 CDonekhan LLC</p>
+            <p><a href="#top"> Go to the top!</a></p>
+        </footer>
+      </div>
+  </body>
+</html>
