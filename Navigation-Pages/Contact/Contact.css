@@ -8,7 +8,14 @@
     max-width:100px;
     margin-top: 100px;
 }
-    .FPic3 {
-      margin-top:75px;
-      max-width: 120px;
+.FPic2 {
+    margin-top:0px;
+    margin-bottom:10px;
+    }
+.FPic3 {
+    max-width: 120px;
+}
+.top-margin {
+
+      margin-top: 100px;
 }

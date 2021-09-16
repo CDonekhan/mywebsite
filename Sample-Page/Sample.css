@@ -3,6 +3,7 @@
 /*Background Color */
 html {
     background:#1d1e1f;
+    font-size: 22px;
 }
   body {
     margin:0 auto;
@@ -54,6 +55,7 @@ html {
     max-width: 40px;
     margin-left:80px;
     margin-right:80px;
+    margin-bottom:5px;
 }
   .FPic2:hover {
     transform: scale(2.0) rotate(10deg);
@@ -61,7 +63,9 @@ html {
   .list-fix {
     text-align: left;
 }
-
+  .hr-dash {
+    border: dashed skyblue 1px;
+  }
 /*Changes specific to this page*/
 
 /*Background Color */

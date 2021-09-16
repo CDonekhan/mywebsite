@@ -7,7 +7,7 @@ h1 {
     border:rebeccapurple solid 4px;
 }
 h2 {
-    border:rebeccapurple solid 4px;
+    border:rebeccapurple solid 0px;
 }
 /* Edits of Classes*/
 .FPic3 {
@@ -27,4 +27,7 @@ h2 {
 
     border:red 8px solid;
 
+}
+.hr-dash {
+    border:purple 0px solid;
 }
