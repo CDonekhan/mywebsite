@@ -34,9 +34,13 @@
            <p>html stands for hypertext markup language. The hyper text refers to the hyperlinks that can be created to link different webpages. The markup section refers to the various tags used throughout the language. A typical line will have a format of (<em>markup + attributes</em>) Content(<em>/markup</em>). The line will have the markup tag opening and closing; attributes inside the tag to refer to links, image sources, css(styling); and the content referring to text of the line for the most part. </p>
            <p>I use italics to discuss attributes and markup tags, but just look at the html for the real format!</p>
            <p>To understand this page, its important to look at the source code of this page while reading. Right click the page and click view source code. To find the right section, use ctrl f and type in the section! </p>
+           <nav>
+              <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div">span-div</a></p>
+
+           </nav>
           </div>
       <main>
-        <section> 
+        <section id="webpage-structure"> 
           <h1>Webpage Structure</h1>
           <h2>General Page Layout</h2>
           <p>To begin a webpage a <em>!DOCTYPE html</em> is written to specify the html type of the page. The page is then wrapped in an <em>html</em> tag to display where the html content is.</p>
@@ -52,7 +56,7 @@
           <h2>Example of this html</h2>
           <p>The html from the <a href="../../Sample-Page/Sample.html"> Sample-Page</a> displays these ideas pretty well. Just follow the link, right click the page, and view the page source! The information is also on this page, but it's probably better to look at a simpler webpage first!</p>       
         </section>
-        <section>
+        <section id="paragraph-list">
           <h1> Paragraphs/Ordered Lists/Unordered Lists/Descriptive List</h1>
           <p>Paragraphs are lines of text that are separated/spaced out to provide a paragraph. Ordered lists and unordered lists display content in a list format. Unordered will display dots by default and an ordered list will display ordered numbers. A descriptive list gives titles and content for each title in a list format.</p>
           <p> An example of these concepts:</p>
@@ -92,7 +96,7 @@
               <dd>Prokaryotic Cell with a cell wall.</dd>
               </dl>
         </section>
-        <section>
+        <section id="heading-size">
               <h1>Various Heading Sizes (This heading is h1)</h1>
               <h2>This is a list of different heading sizes that are default.
                 <hr class="example-divider">
@@ -103,7 +107,7 @@
               <h5>This is an h5 heading!</h5>
               <h6>This is an h6 heading!</h6>
         </section>
-        <section>
+        <section id="class-images">
           <h1>Classes/Images</h1>
           <p>A <em>class</em> is added to a markup/tag to designate style/css to be added to that line of content. The style changes to a partiuclar <em>class</em> can be found in the css stylesheet attached to the html document. The stylesheet link can be found in the <em>head</em> section.</p>
           <p>An <em>img</em> tag (Image) is used to add an image to the webpage. An image can have three attributes: the <em>src</em> atttribute adds the link to the image source; the <em>alt</em> attribute adds text information used to label the image in the html and when the image source is compromised; and the <em>title</em> attribute, which is displays a text description of the image if a cursor hovers over the image.</p>
@@ -112,7 +116,7 @@
           <img class=" FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class">
           <img class="FPic4 "src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image without border added by Class">
         </section>
-       <section>
+       <section id="article">
         <h1>Article Practice!</h1>
              <p>This section uses an <em>article</em>> tag! An <em>article</em> is standalone content with a title and body. Think of a typical text section in a webpage. <em>article</em> (s) typically contain a header (<em>h1 h2 h3 etc</em> and a paragraph. There can be more section for longer <em>article</em> (s) An internal <em>aside</em> can be added to show a pulled quote from the <em>article</em>. 
              </p>
@@ -136,7 +140,7 @@
             <footer>Published: September 14, 2021</footer>
           </article>
          </section>
-          <section>
+          <section id="aside">
             <h1>Aside Practice!
             </h1>
             <p> This sections uses the <em>aside</em> markup! The <em>aside</em> is for resources that may be related to the content on the page but is simply just an extra resource or additional related information. An example of this is an external resource related to a topic like an interesting biochemical reaction in a textbook that is being researched but is not the main focus of the textbook section. This type of <em>aside</em> is specifically external to another section.</p>
@@ -149,10 +153,10 @@
             <p>This is a article on homeostasis in biological organisms that may be helpful. Here is the link: https://www.scientificamerican.com/article/what-is-homeostasis/</p>
             </aside>
           </section>
-         <section>  
+         <section id="link-navigation">  
               <h1>Links/Navigation</h1>
                 <p>The <em>a</em> tag is used to create a hyper link of the content it wraps. The <em>a</em> is called an anchor. It uses the <em>href</em> attribute to specify the path to the new webpage or section the current webpage. The <em>target</em> attribute of the anchor tag can designate where the link is opened in a separate tab.   </p>
-                <p> This section has a <em>nav</em> navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes.</p>
+                <p> This section has a <em>nav</em> navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! </p>
                 <p> An example of these concepts:</p>
                 <hr class="example-divider">
                 <nav>
@@ -160,11 +164,13 @@
                 <p>(Instrumental Math Rock)</p>
                 <p><a href="https://www.youtube.com/watch?v=D2_r4q2imnQ" target="_blank">This is a special link that redirects to another page on another tab!</a></p>
                 <p><a href="https://cdonekhan.github.io/mywebsite/Just-For-Fun/Buttons/Buttons.html">Url for buttons using direct link</a></p>
-                <p><a href="../../Just-For-Fun/Buttons/Buttons.html">Url for buttons using directory</a></p>
+                <p><a href="../../Just-For-Fun/Buttons/Buttons.html">url for buttons using directory</a></p>
+                <p><a href="/Just-For-Fun/Buttons/Buttons.html">url for buttons using root directory link</a></p>
+                
                 </nav>
                 
           </section>
-          <section>
+          <section id="div-main-blockquote">
             <h1>
               Div/Main/Block Quote
             </h1>
@@ -184,7 +190,7 @@
               </footer>
             </blockquote>
           </section>
-          <section>
+          <section id="address-break-strong">
            <h1>Address/break/Strong Tag/Small Tag</h1>
            <p>This section has an <em>address</em> tag for putting a geographical address. The information in the <em>address</em> tag is formatted in italics and can be found in a search as an address! The <em>strong</em> tag is used to indicate strong importance or urgency. The <em>strong</em> element is default bold. A <em>br</em> tag is a break. The break places information in separate lines for the same text section. The <em>small</em> tag is used for disclaimers, caveots, legal restrictions, and copyright information.</p>
            <p> An example of these concepts:</p>
@@ -200,7 +206,7 @@
            <p><small>*There are currently no in person visits at the moment. Please call for information on shipping!</small></p>
            </address>
           </section>
-          <section>
+          <section id="hr-em">
             <h1>Horizontal Rule/Emphisis</h1>
             <p>An <em>hr</em> tag is used to separate different blocks of content inside of a <em>section</em>, <em>article</em>, etc. This separatation is made for thematic breaks and subject (concept) changes. <em>em</em> (emphisis tags) add emphisis to particular words to change the meaning of the sentance. I have been using them to note the different types of tags but they are typically used like the below example. Emphasis is displayed as italics!</p>
             <p> An example of these concepts:</p>
@@ -208,6 +214,14 @@
             <p>The first rule of Fight Club is: You <em>do not</em> talk about Fight Club. I don't think I have to explain why this rule is so important!</p>
             <hr>
             <p>The second rule of Fight Club is: <em>Always</em> bring cupcakes. <em>always bring cupcakes.</em></p>
+          </section>
+          <section id="span-div">
+            <h1>Span/Div</h1>
+            <p><em>span</em> and <em>div</em> are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. <em>span</em> is used inside a block of content (such as a word or phrase in a sentence), while <em>div</em> is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the <em>div & span</em> tags are.        </p>
+            <p> The example for these concepts:</p>
+            <hr class="example-divider">
+            <div class="example-color"><p>One two three four five six seven eight nine ten. This entire block of text is surrounded by a div tag.</p></div>
+            <p>One <span class="example-color">two</span> three four <span class="example-color">five</span> six seven eight nine ten. Certain words are wrapped by a span tag.</p>
           </section>
          <div>
             <h1>The section below this line is the footer!</h1>
