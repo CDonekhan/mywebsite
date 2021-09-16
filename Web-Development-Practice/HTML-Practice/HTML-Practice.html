@@ -35,7 +35,7 @@
            <p>I use italics to discuss attributes and markup tags, but just look at the html for the real format!</p>
            <p>To understand this page, its important to look at the source code of this page while reading. Right click the page and click view source code. To find the right section, use ctrl f and type in the section! </p>
            <nav>
-              <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div">span-div</a></p>
+              <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div-pre">span-div-pre</a></p>
 
            </nav>
           </div>
@@ -156,8 +156,8 @@
          <section id="link-navigation">  
               <h1>Links/Navigation</h1>
                 <p>The <em>a</em> tag is used to create a hyper link of the content it wraps. The <em>a</em> is called an anchor. It uses the <em>href</em> attribute to specify the path to the new webpage or section the current webpage. The <em>target</em> attribute of the anchor tag can designate where the link is opened in a separate tab.   </p>
-                <p> This section has a <em>nav</em> navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! </p>
-                <p> An example of these concepts:</p>
+                <p> This section has a <em>nav</em> navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! <br> You can also link to a specific section of another page! I'll put an example in a comment on the html! <br> There is a <em>mailto:</em> command that can be added to an <em>href</em> attribute to send an email. An example of this and its formatting is given!</p>
+                <p> The examples of these concepts:</p>
                 <hr class="example-divider">
                 <nav>
                 <p><a href="https://www.youtube.com/watch?v=3egXqihisFQ">This is a special link that redirects to another page!</a></p>
@@ -166,8 +166,9 @@
                 <p><a href="https://cdonekhan.github.io/mywebsite/Just-For-Fun/Buttons/Buttons.html">Url for buttons using direct link</a></p>
                 <p><a href="../../Just-For-Fun/Buttons/Buttons.html">url for buttons using directory</a></p>
                 <p><a href="/Just-For-Fun/Buttons/Buttons.html">url for buttons using root directory link</a></p>
-                
-                </nav>
+                <!--    <a href="../../class-notes/history/history.html#sub-section3">This is a link to the third subsection of the history tab. This uses a subject id attribute in the history page!</a>                                                            -->
+                <p><a href="mailto:cmemequeen@gmail.com?subject=Hi%20there%20brother!%20lol">Send mail to me!</a></p>
+              </nav>
                 
           </section>
           <section id="div-main-blockquote">
@@ -215,13 +216,19 @@
             <hr>
             <p>The second rule of Fight Club is: <em>Always</em> bring cupcakes. <em>always bring cupcakes.</em></p>
           </section>
-          <section id="span-div">
-            <h1>Span/Div</h1>
-            <p><em>span</em> and <em>div</em> are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. <em>span</em> is used inside a block of content (such as a word or phrase in a sentence), while <em>div</em> is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the <em>div & span</em> tags are.        </p>
+          <section id="span-div-pre">
+            <h1>span/div/pre</h1>
+            <p><em>span</em> and <em>div</em> are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. <em>span</em> is used inside a block of content (such as a word or phrase in a sentence), while <em>div</em> is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the <em>div & span</em> tags are. <br> <em>pre</em> is a markup tag that displays text & spacing exactly as it appears in the content. <br> There is a list of codes that can be used to add symbols that are commonly used in html structure such as &lt; the carrot. An example of a few of these are in the <em>pre</em> example. A full list of these codes are available in the coding resources webpage!</p>
             <p> The example for these concepts:</p>
             <hr class="example-divider">
             <div class="example-color"><p>One two three four five six seven eight nine ten. This entire block of text is surrounded by a div tag.</p></div>
             <p>One <span class="example-color">two</span> three four <span class="example-color">five</span> six seven eight nine ten. Certain words are wrapped by a span tag.</p>
+            <pre>
+              &lt;div&gt;
+                This is a div...
+                &lt;p&gt;This paragraph is nested&lt;/p&gt;
+              &lt;/div&gt;          
+            </pre>
           </section>
          <div>
             <h1>The section below this line is the footer!</h1>
