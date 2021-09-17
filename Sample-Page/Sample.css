@@ -11,10 +11,6 @@ html {
     text-align: center;
     color: white;
 }
-em {
-  color:pink;
-
-}
 /* Edits attributes of a hyperlink */
   a{
     color: skyblue;

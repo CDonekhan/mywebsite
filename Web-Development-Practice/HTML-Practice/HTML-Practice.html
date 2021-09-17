@@ -31,9 +31,13 @@
               document.getElementById('green').play();
              }
            </script>
-           <p>html stands for hypertext markup language. The hyper text refers to the hyperlinks that can be created to link different webpages. The markup section refers to the various tags used throughout the language. A typical line will have a format of (<em>markup + attributes</em>) Content(<em>/markup</em>). The line will have the markup tag opening and closing; attributes inside the tag to refer to links, image sources, css(styling); and the content referring to text of the line for the most part. </p>
-           <p>I use italics to discuss attributes and markup tags, but just look at the html for the real format!</p>
-           <p>To understand this page, its important to look at the source code of this page while reading. Right click the page and click view source code. To find the right section, use ctrl f and type in the section! </p>
+           <p><span>html</span> stands for hypertext markup language. The hypertext refers to the hyperlinks that can be created to link different webpages. The markup section refers to the various tags used throughout the language.</p>
+             <p> An example of a markup tag could be the simple &lt;p&gt; (<span>paragraph</span>) markup tag.</p>
+            <pre>&lt;p&gt;Hello World&lt;/p&gt;</pre>
+            <p>All markup tags follow the format of the <span>opening-tag:</span> &lt;p&gt; <span>content:</span> Hello World <span>closing-tag:</span> &lt;/p&gt;</p>
+            <p><span>Attributes</span> are added to a tag to give it a particular property.</p>
+            <p>An &lt;a&gt;(anchor) tag is used to create a link from text. The attribute href="" is added to specify the source of the link!</p>
+            <pre>&lt;a href="http://www.ieatass.com"&gt;I would not click this link lol&lt;/a&gt;</pre>
            <nav>
               <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div-pre">span-div-pre</a></p>
 
@@ -43,15 +47,21 @@
         <section id="webpage-structure"> 
           <h1>Webpage Structure</h1>
           <h2>General Page Layout</h2>
-          <p>To begin a webpage a <em>!DOCTYPE html</em> is written to specify the html type of the page. The page is then wrapped in an <em>html</em> tag to display where the html content is.</p>
-          <p>The webpage is sectioned into the <em>head</em> and the <em>body</em>. </p> 
+          <p><span>To begin a webpage</span> a &lt;!DOCTYPE html&gt; is written to specify the <span>html type</span> of the page. The page is then wrapped in an &lt;html&gt; tag to display where the html content is.</p>
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+(Rest of document lol)
+&lt;/html&gt;
+          </pre>
+          <p>The webpage is sectioned into the &lt;head&gt; and the &lt;body&gt;. </p> 
           <h2>The Head</h2>
-          <p>The <em>head</em> contains information that the webpage uses and references such as css files for style and script for java. The title is added in the <em>head</em> for the page name in favorites/bookmarks. There are also different formatting options usable in the head section. </p> 
+          <p>The &lt;head&gt; contains information that the webpage uses and references such as css files for style and script for java. The title is added in the &lt;head&gt; for the page name in favorites/bookmarks. There are also different formatting options usable in the head section. </p> 
           <h2>The Body</h2>
-          <p> The <em>body</em> is where all the content of the webpage is displayed.</p>
-          <p>The <em>body</em> is typically sectioned into <em>header</em>, <em>footer</em>, and the rest of the content. The <em>header</em> and <em>footer</em> usually display content that is identical to all webpages in the website. The <em>header</em> will have the website title, some navigation links, and maybe a small description. The <em>footer</em> typically has company contact information, copyright information, and other navigation elements.</p>
-          <p>The rest of the <em>body</em> is typically divided into <em>section</em> (s) and other markups to organize the page. It is important to section and label portions of the page with the appropriate tags so that people can read the code, search engines can locate information easily, and people who use auditory aids can understand the webpage properly!  </p>
-          <p>Finally, a <em>main</em> tag is used to display where the main content of the page is. This content is usually parts of the page that are unique only to it, like a page that displays an article. The article is the <em>main</em> content.  </p>
+          <p> The &lt;body&gt; is where all the content of the webpage is displayed.</p>
+          <p>The &lt;body&gt; is typically sectioned into &lt;header&gt;, &lt;footer&gt;, and the rest of the content. The &lt;header&gt; and &lt;footer&gt; usually display content that is identical to all webpages in the website. The &lt;header&gt; will have the website title, some navigation links, and maybe a small description. The &lt;footer&gt; typically has company contact information, copyright information, and other navigation elements.</p>
+          <p>The rest of the &lt;body&gt; is typically divided into &lt;section&gt; (s) and other markups to organize the page. It is important to section and label portions of the page with the appropriate tags so that people can read the code, search engines can locate information easily, and people who use auditory aids can understand the webpage properly!  </p>
+          <p>Finally, a &lt;main&gt; tag is used to display where the main content of the page is. This content is usually parts of the page that are unique only to it, like a page that displays an article. The article is the &lt;main&gt; content.  </p>
           <hr class="example-divider">
           <h2>Example of this html</h2>
           <p>The html from the <a href="../../Sample-Page/Sample.html"> Sample-Page</a> displays these ideas pretty well. Just follow the link, right click the page, and view the page source! The information is also on this page, but it's probably better to look at a simpler webpage first!</p>       
@@ -106,11 +116,19 @@
               <h4>This is an h4 heading!</h4>
               <h5>This is an h5 heading!</h5>
               <h6>This is an h6 heading!</h6>
+              <hr class="example-divider">
+<pre>
+  &lt;h2&gt;This is an h2 heading!&lt;/h2&gt;
+  &lt;h3&gt;This is an h3 heading!&lt;/h3&gt;
+  &lt;h4&gt;This is an h4 heading!&lt;/h4&gt;
+  &lt;h5&gt;This is an h5 heading!&lt;/h5&gt;
+  &lt;h6&gt;This is an h6 heading!&lt;/h6&gt;
+</pre>
         </section>
         <section id="class-images">
           <h1>Classes/Images</h1>
-          <p>A <em>class</em> is added to a markup/tag to designate style/css to be added to that line of content. The style changes to a partiuclar <em>class</em> can be found in the css stylesheet attached to the html document. The stylesheet link can be found in the <em>head</em> section.</p>
-          <p>An <em>img</em> tag (Image) is used to add an image to the webpage. An image can have three attributes: the <em>src</em> atttribute adds the link to the image source; the <em>alt</em> attribute adds text information used to label the image in the html and when the image source is compromised; and the <em>title</em> attribute, which is displays a text description of the image if a cursor hovers over the image.</p>
+          <p>A &lt;class&gt; is added to a markup/tag to designate style/css to be added to that line of content. The style changes to a partiuclar &lt;class&gt; can be found in the css stylesheet attached to the html document. The stylesheet link can be found in the &lt;head&gt; section.</p>
+          <p>An &lt;img&gt; tag is used to add an image to the webpage. An image can have three attributes: the &lt;src&gt; atttribute adds the link to the image source; the &lt;alt&gt; attribute adds text information used to label the image in the html and when the image source is compromised; and the &lt;title&gt; attribute, which is displays a text description of the image if a cursor hovers over the image.</p>
           <p> An example of these concepts:</p>
           <hr class="example-divider">
           <img class=" FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class">
@@ -118,9 +136,9 @@
         </section>
        <section id="article">
         <h1>Article Practice!</h1>
-             <p>This section uses an <em>article</em>> tag! An <em>article</em> is standalone content with a title and body. Think of a typical text section in a webpage. <em>article</em> (s) typically contain a header (<em>h1 h2 h3 etc</em> and a paragraph. There can be more section for longer <em>article</em> (s) An internal <em>aside</em> can be added to show a pulled quote from the <em>article</em>. 
+             <p>This portion uses an &lt;article&gt; tag! An &lt;article&gt; is standalone content with a title and body. Think of a typical text section in a webpage. &lt;article&gt; (s) typically contain a header (&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt; etc) and a paragraph. An internal &lt;aside&gt; can be added to show a pulled quote from the &lt;article&gt;. 
              </p>
-            <p>The <em>footer</em> at the end gives credits and additional information. A <em>header</em> and a <em>footer</em> can also be applied to an <em>article</em> just like the <em>body</em> </p>
+            <p>The &lt;footer&gt; at the end gives credits and additional information. A &lt;header&gt; and a &lt;footer&gt; can also be applied to an &lt;article&gt; just like the &lt;body&gt; </p>
             <p> An example of these concepts:</p>
             <hr class="example-divider">
          <article>
@@ -143,7 +161,7 @@
           <section id="aside">
             <h1>Aside Practice!
             </h1>
-            <p> This sections uses the <em>aside</em> markup! The <em>aside</em> is for resources that may be related to the content on the page but is simply just an extra resource or additional related information. An example of this is an external resource related to a topic like an interesting biochemical reaction in a textbook that is being researched but is not the main focus of the textbook section. This type of <em>aside</em> is specifically external to another section.</p>
+            <p> This sections uses the &lt;aside&gt; markup! The &lt;aside&gt; is for resources that may be related to the content on the page but is simply just an extra resource or additional related information. An example of this is an external resource related to a topic like an interesting biochemical reaction in a textbook that is being researched but is not the main focus of the textbook section. This type of &lt;aside&gt; is specifically external to another section.</p>
             <p> An example of these concepts:</p>
               <hr class="example-divider">
           <aside>
@@ -155,8 +173,8 @@
           </section>
          <section id="link-navigation">  
               <h1>Links/Navigation</h1>
-                <p>The <em>a</em> tag is used to create a hyper link of the content it wraps. The <em>a</em> is called an anchor. It uses the <em>href</em> attribute to specify the path to the new webpage or section the current webpage. The <em>target</em> attribute of the anchor tag can designate where the link is opened in a separate tab.   </p>
-                <p> This section has a <em>nav</em> navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! <br> You can also link to a specific section of another page! I'll put an example in a comment on the html! <br> There is a <em>mailto:</em> command that can be added to an <em>href</em> attribute to send an email. An example of this and its formatting is given!</p>
+                <p>The &lt;a&gt; tag is used to create a hyper link of the content it wraps. The &lt;a&gt; is called an anchor. It uses the &lt;href&gt; attribute to specify the path to the new webpage or section the current webpage. The &lt;target&gt; attribute of the anchor tag can designate where the link is opened in a separate tab.   </p>
+                <p> This section has a &lt;nav&gt; navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! <br> You can also link to a specific section of another page! I'll put an example in a comment on the html! <br> There is a &lt;mailto:&gt; command that can be added to an &lt;href&gt; attribute to send an email. An example of this and its formatting is given!</p>
                 <p> The examples of these concepts:</p>
                 <hr class="example-divider">
                 <nav>
@@ -175,7 +193,7 @@
             <h1>
               Div/Main/Block Quote
             </h1>
-              <p> <em>Div</em> is used to portion sections that are not clearly labeled into a defined section. This is good for extra content such as a random button for music like on this page haha. <em>div</em> is also used to encase the inside of the <em>body</em> section which helps with formatting in css, this is more of convention than a rule. <em>main</em> wraps the main portion of the webpage. This excludes the footer and header. This also excludes any content that can be percieved as extra such as an external <em>aside</em>. The <em>blockquote</em> is for large quotes or lists of quotes. </p>
+              <p> &lt;Div&gt; is used to portion sections that are not clearly labeled into a defined section. This is good for extra content such as a random button for music like on this page haha. &lt;div&gt; is also used to encase the inside of the &lt;body&gt; section which helps with formatting in css, this is more of convention than a rule. &lt;main&gt; wraps the main portion of the webpage. This excludes the footer and header. This also excludes any content that can be percieved as extra such as an external &lt;aside&gt;. The &lt;blockquote&gt; is for large quotes or lists of quotes. </p>
                 <p> An example of these concepts:</p>
                 <hr class="example-divider">
               </p>
@@ -193,7 +211,7 @@
           </section>
           <section id="address-break-strong">
            <h1>Address/break/Strong Tag/Small Tag</h1>
-           <p>This section has an <em>address</em> tag for putting a geographical address. The information in the <em>address</em> tag is formatted in italics and can be found in a search as an address! The <em>strong</em> tag is used to indicate strong importance or urgency. The <em>strong</em> element is default bold. A <em>br</em> tag is a break. The break places information in separate lines for the same text section. The <em>small</em> tag is used for disclaimers, caveots, legal restrictions, and copyright information.</p>
+           <p>This section has an &lt;address&gt; tag for putting a geographical address. The information in the &lt;address&gt; tag is formatted in italics and can be found in a search as an address! The &lt;strong&gt; tag is used to indicate strong importance or urgency. The &lt;strong&gt; element is default bold. A &lt;br&gt; tag is a break. The break places information in separate lines for the same text section. The &lt;small&gt; tag is used for disclaimers, caveots, legal restrictions, and copyright information.</p>
            <p> An example of these concepts:</p>
            <hr class="example-divider">
            <h2>Contact</h2>
@@ -209,16 +227,16 @@
           </section>
           <section id="hr-em">
             <h1>Horizontal Rule/Emphisis</h1>
-            <p>An <em>hr</em> tag is used to separate different blocks of content inside of a <em>section</em>, <em>article</em>, etc. This separatation is made for thematic breaks and subject (concept) changes. <em>em</em> (emphisis tags) add emphisis to particular words to change the meaning of the sentance. I have been using them to note the different types of tags but they are typically used like the below example. Emphasis is displayed as italics!</p>
+            <p>An &lt;hr&gt; tag is used to separate different blocks of content inside of a &lt;section&gt;, &lt;article&gt;, etc. This separatation is made for thematic breaks and subject (concept) changes. &lt;em&gt; (emphisis tags) add emphisis to particular words to change the meaning of the sentance. I have been using them to note the different types of tags but they are typically used like the below example. Emphasis is displayed as italics!</p>
             <p> An example of these concepts:</p>
             <hr class="example-divider">
-            <p>The first rule of Fight Club is: You <em>do not</em> talk about Fight Club. I don't think I have to explain why this rule is so important!</p>
+            <p>The first rule of Fight Club is: You &lt;do not&gt; talk about Fight Club. I don't think I have to explain why this rule is so important!</p>
             <hr>
-            <p>The second rule of Fight Club is: <em>Always</em> bring cupcakes. <em>always bring cupcakes.</em></p>
+            <p>The second rule of Fight Club is: &lt;Always&gt; bring cupcakes. &lt;always bring cupcakes.&gt;</p>
           </section>
           <section id="span-div-pre">
             <h1>span/div/pre</h1>
-            <p><em>span</em> and <em>div</em> are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. <em>span</em> is used inside a block of content (such as a word or phrase in a sentence), while <em>div</em> is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the <em>div & span</em> tags are. <br> <em>pre</em> is a markup tag that displays text & spacing exactly as it appears in the content. <br> There is a list of codes that can be used to add symbols that are commonly used in html structure such as &lt; the carrot. An example of a few of these are in the <em>pre</em> example. A full list of these codes are available in the coding resources webpage!</p>
+            <p>&lt;span&gt; and &lt;div&gt; are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. &lt;span&gt; is used inside a block of content (such as a word or phrase in a sentence), while &lt;div&gt; is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the &lt;div & span&gt; tags are. <br> &lt;pre&gt; is a markup tag that displays text & spacing exactly as it appears in the content. <br> There is a list of codes that can be used to add symbols that are commonly used in html structure such as &lt; the carrot. An example of a few of these are in the &lt;pre&gt; example. A full list of these codes are available in the coding resources webpage!</p>
             <p> The example for these concepts:</p>
             <hr class="example-divider">
             <div class="example-color"><p>One two three four five six seven eight nine ten. This entire block of text is surrounded by a div tag.</p></div>
