@@ -32,11 +32,11 @@
              }
            </script>
            <p><span>html</span> stands for hypertext markup language. The hypertext refers to the hyperlinks that can be created to link different webpages. The markup section refers to the various tags used throughout the language.</p>
-             <p> An example of a markup tag could be the simple &lt;p&gt; (<span>paragraph</span>) markup tag.</p>
+             <p> An example of a markup tag could be the simple <span>&lt;p&gt;</span> (paragraph) markup tag.</p>
             <pre>&lt;p&gt;Hello World&lt;/p&gt;</pre>
-            <p>All markup tags follow the format of the <span>opening-tag:</span> &lt;p&gt; <span>content:</span> Hello World <span>closing-tag:</span> &lt;/p&gt;</p>
+            <p>All markup tags follow the format of the opening-tag: <span>&lt;p&gt;</span> content: <span>Hello World</span> closing-tag: &lt;/p&gt;</p>
             <p><span>Attributes</span> are added to a tag to give it a particular property.</p>
-            <p>An &lt;a&gt;(anchor) tag is used to create a link from text. The attribute href="" is added to specify the source of the link!</p>
+            <p>An <span>&lt;a&gt;(anchor) tag</span> is used to create a link from text. The attribute <span>href=""</span> is added to specify the source of the link!</p>
             <pre>&lt;a href="http://www.ieatass.com"&gt;I would not click this link lol&lt;/a&gt;</pre>
            <nav>
               <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div-pre">span-div-pre</a></p>
@@ -47,24 +47,109 @@
         <section id="webpage-structure"> 
           <h1>Webpage Structure</h1>
           <h2>General Page Layout</h2>
-          <p><span>To begin a webpage</span> a &lt;!DOCTYPE html&gt; is written to specify the <span>html type</span> of the page. The page is then wrapped in an &lt;html&gt; tag to display where the html content is.</p>
-          <pre>
+          <p>To begin a webpage a <span>&lt;!DOCTYPE html&gt;</span> is written to specify the <span>html type</span> of the page. The page is then wrapped in an <span>&lt;html&gt;</span> tag to display where the html content is.</p>
+          <pre class="text-align-left">
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-(Rest of document lol)
-&lt;/html&gt;
+  &lt;html&gt;
+    Rest of document bruh
+  &lt;/html&gt;
           </pre>
-          <p>The webpage is sectioned into the &lt;head&gt; and the &lt;body&gt;. </p> 
+          <p>The webpage is then sectioned into the <span>&lt;head&gt;</span> and the <span>&lt;body&gt;</span>. </p>
+          <pre class="text-align-left">
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+      Content of the head
+    &lt;/head&gt;
+
+    &lt;body&gt;
+      content of the body
+    &lt;/body&gt;
+
+  &lt;/html&gt;
+          </pre> 
           <h2>The Head</h2>
-          <p>The &lt;head&gt; contains information that the webpage uses and references such as css files for style and script for java. The title is added in the &lt;head&gt; for the page name in favorites/bookmarks. There are also different formatting options usable in the head section. </p> 
+          <p>The <span>&lt;head&gt;</span> contains information that the webpage uses and references such as <span>&lt;style&gt;</span> tag for <span>css</span> files  and <span>&lt;script&gt;</span> tag for <span>java</span> files. We will focus only on the <span>css</span> for now! </p>
+           
+          <p><span>html</span> is used to create the structure of the page while <span>css</span> is used to style the page by: <span>adding colors</span>, <span>changing fonts</span>, <span>changing border sizes</span>, and much more! <span>css</span> is a language that will be covered more in depth in the <span>css section</span> but it will be utilized in small amounts in this section! The main thing to know now is that <span>css</span> can be added into an <span>html</span> file either <span>directly</span> or through <span>a link</span>. </p>
+          <pre class="text-align-left">
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+     &lt;title&gt; This is the title of the document! &lt;/title&gt;
+     &lt;style&gt;
+
+          html {
+            color:red;
+          }
+
+      &lt;/style&gt;
+
+      &lt;link rel="stylesheet" href="sample.css"&gt;
+
+    &lt;/head&gt;
+
+  &lt;body&gt;
+    (content of the body)
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+      <p> As you can see, a <span>&lt;style&gt;</span> tag is used to add <span>css</span> directly into the html to change the color of text in the document to red. A <span>&lt;link&gt;</span> can be used to associate a <span>css</span> page to the <span>html</span> document. The <span>href</span> attribute is used to designate the relative location of the <span>css</span> file. The <span>rel</span>="stylesheet" attribute confirms that the <span>&lt;link&gt;</span> recognizes the document as a styling reference. The red color code can be added to the <span>css</span> page to affect this html document in the same way! </p>
+      <p> You may have notices the <span>&lt;title&gt;</span> tag in the <span>&lt;head&gt;</span> section! This tag gives a title to the document that is used by search engines and the favorites tab of a web browser to identify this page.</p> 
           <h2>The Body</h2>
-          <p> The &lt;body&gt; is where all the content of the webpage is displayed.</p>
-          <p>The &lt;body&gt; is typically sectioned into &lt;header&gt;, &lt;footer&gt;, and the rest of the content. The &lt;header&gt; and &lt;footer&gt; usually display content that is identical to all webpages in the website. The &lt;header&gt; will have the website title, some navigation links, and maybe a small description. The &lt;footer&gt; typically has company contact information, copyright information, and other navigation elements.</p>
-          <p>The rest of the &lt;body&gt; is typically divided into &lt;section&gt; (s) and other markups to organize the page. It is important to section and label portions of the page with the appropriate tags so that people can read the code, search engines can locate information easily, and people who use auditory aids can understand the webpage properly!  </p>
-          <p>Finally, a &lt;main&gt; tag is used to display where the main content of the page is. This content is usually parts of the page that are unique only to it, like a page that displays an article. The article is the &lt;main&gt; content.  </p>
-          <hr class="example-divider">
-          <h2>Example of this html</h2>
-          <p>The html from the <a href="../../Sample-Page/Sample.html"> Sample-Page</a> displays these ideas pretty well. Just follow the link, right click the page, and view the page source! The information is also on this page, but it's probably better to look at a simpler webpage first!</p>       
+          <p> The <span>&lt;body&gt;</span> is where all the content of the webpage is displayed.</p>
+          <p>The <span>&lt;body&gt;</span> is typically sectioned into <span>&lt;header&gt;</span>, <span>&lt;footer&gt;</span>, and the rest of the content. The <span>&lt;header&gt;</span> and <span>&lt;footer&gt;</span> usually display content that is identical to all webpages in the website. The <span>&lt;header&gt;</span> will have the website title, some navigation links, and maybe a small description. The <span>&lt;footer&gt;</span> typically has company contact information, copyright information, and other navigation elements. The following example is the <span>html</span> code for the <span>&lt;header&gt;</span> and the <span>&lt;footer&gt;</span> of this page!</p>
+<pre class="text-align-left">
+&lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;HTML Practice&lt;/h1&gt;
+       &lt;nav&gt;
+          &lt;a href="../../index.html"&gt;&lt;img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"&gt;&lt;/a&gt;
+          &lt;a href="../../Navigation-Pages/Resume-Page/Resume.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"&gt;&lt;/a&gt;
+          &lt;a href="../../Navigation-Pages/Contact/Contact.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links"&gt;   &lt;/a&gt;
+      &lt;/nav&gt;
+      &lt;hr class="hr-dash"&gt;
+    &lt;/header&gt;
+    Rest of the Document!
+    &lt;footer&gt;
+      &lt;p&gt;&lt;a href="#top"&gt; Go to the top!&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&copy; &lt;small&gt;2021 CDonekhan LLC&lt;/small&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+
+
+
+          </pre>
+          <p>The rest of the <span>&lt;body&gt;</span> is typically divided into <span>&lt;section&gt;</span> (s) and other markups to organize the page. It is important to section and label portions of the page with the appropriate tags so that people can read the code, search engines can locate information easily, and people who use auditory aids can understand the webpage properly!  </p>
+          <p>Finally, a <span>&lt;main&gt;</span> tag is used to display where the main content of the page is. This content includes parts of the page that are unique only to the webpage. For example: A webpage with a news story will have the <span>&lt;main&gt;</span> tag around the content of the news article.</p>
+          <pre class="text-align-left">
+<!DOCTYPE html>
+  &lt;html&gt;
+    &lt;head&gt;
+     content of webpage head
+    &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+     content of webpage header
+    &lt;/header&gt;
+    &lt;main&gt;
+    &lt;section&gt;
+     content of section 1
+    &lt;/section&gt;
+    &lt;section&gt;
+     content of section 2
+    &lt;/section&gt;
+
+    &lt;/main&gt;
+    &lt;footer&gt;
+     content of webpage footer
+    &lt;/footer&gt;
+  &lt;/body&gt;
+ &lt;/html&gt;
+</pre>
         </section>
         <section id="paragraph-list">
           <h1> Paragraphs/Ordered Lists/Unordered Lists/Descriptive List</h1>
@@ -131,7 +216,7 @@
           <p>An &lt;img&gt; tag is used to add an image to the webpage. An image can have three attributes: the &lt;src&gt; atttribute adds the link to the image source; the &lt;alt&gt; attribute adds text information used to label the image in the html and when the image source is compromised; and the &lt;title&gt; attribute, which is displays a text description of the image if a cursor hovers over the image.</p>
           <p> An example of these concepts:</p>
           <hr class="example-divider">
-          <img class=" FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class">
+          <img class="FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class">
           <img class="FPic4 "src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image without border added by Class">
         </section>
        <section id="article">
@@ -259,3 +344,4 @@
       </div>
   </body>
 </html>
+

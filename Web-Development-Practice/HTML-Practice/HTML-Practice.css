@@ -37,3 +37,6 @@ h2 {
 .example-color {
     color:greenyellow;
 }
+.text-align-left {
+    text-align: left;
+}
