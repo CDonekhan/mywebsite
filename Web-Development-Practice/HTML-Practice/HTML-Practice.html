@@ -49,53 +49,53 @@
           <h2>General Page Layout</h2>
           <p>To begin a webpage a <span>&lt;!DOCTYPE html&gt;</span> is written to specify the <span>html type</span> of the page. The page is then wrapped in an <span>&lt;html&gt;</span> tag to display where the html content is.</p>
           <pre class="text-align-left">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-    Rest of document bruh
-  &lt;/html&gt;
+                                                  &lt;!DOCTYPE html&gt;
+                                                    &lt;html&gt;
+                                                      Rest of document bruh
+                                                    &lt;/html&gt;
           </pre>
           <p>The webpage is then sectioned into the <span>&lt;head&gt;</span> and the <span>&lt;body&gt;</span>. </p>
           <pre class="text-align-left">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
+                                                    &lt;!DOCTYPE html&gt;
+                                                      &lt;html&gt;
 
-    &lt;head&gt;
-      Content of the head
-    &lt;/head&gt;
+                                                        &lt;head&gt;
+                                                          Content of the head
+                                                        &lt;/head&gt;
 
-    &lt;body&gt;
-      content of the body
-    &lt;/body&gt;
+                                                        &lt;body&gt;
+                                                          content of the body
+                                                        &lt;/body&gt;
 
-  &lt;/html&gt;
+                                                      &lt;/html&gt;
           </pre> 
           <h2>The Head</h2>
           <p>The <span>&lt;head&gt;</span> contains information that the webpage uses and references such as <span>&lt;style&gt;</span> tag for <span>css</span> files  and <span>&lt;script&gt;</span> tag for <span>java</span> files. We will focus only on the <span>css</span> for now! </p>
            
           <p><span>html</span> is used to create the structure of the page while <span>css</span> is used to style the page by: <span>adding colors</span>, <span>changing fonts</span>, <span>changing border sizes</span>, and much more! <span>css</span> is a language that will be covered more in depth in the <span>css section</span> but it will be utilized in small amounts in this section! The main thing to know now is that <span>css</span> can be added into an <span>html</span> file either <span>directly</span> or through <span>a link</span>. </p>
           <pre class="text-align-left">
-&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
+                                                      &lt;!DOCTYPE html&gt;
+                                                        &lt;html&gt;
 
-    &lt;head&gt;
-     &lt;title&gt; This is the title of the document! &lt;/title&gt;
-     &lt;style&gt;
+                                                          &lt;head&gt;
+                                                          &lt;title&gt; This is the title of the document! &lt;/title&gt;
+                                                          &lt;style&gt;
 
-          html {
-            color:red;
-          }
+                                                                html {
+                                                                  color:red;
+                                                                }
 
-      &lt;/style&gt;
+                                                            &lt;/style&gt;
 
-      &lt;link rel="stylesheet" href="sample.css"&gt;
+                                                            &lt;link rel="stylesheet" href="sample.css"&gt;
 
-    &lt;/head&gt;
+                                                          &lt;/head&gt;
 
-  &lt;body&gt;
-    (content of the body)
-  &lt;/body&gt;
+                                                        &lt;body&gt;
+                                                          (content of the body)
+                                                        &lt;/body&gt;
 
-&lt;/html&gt;
+                                                      &lt;/html&gt;
 </pre>
       <p> As you can see, a <span>&lt;style&gt;</span> tag is used to add <span>css</span> directly into the html to change the color of text in the document to red. A <span>&lt;link&gt;</span> can be used to associate a <span>css</span> page to the <span>html</span> document. The <span>href</span> attribute is used to designate the relative location of the <span>css</span> file. The <span>rel</span>="stylesheet" attribute confirms that the <span>&lt;link&gt;</span> recognizes the document as a styling reference. The red color code can be added to the <span>css</span> page to affect this html document in the same way! </p>
       <p> You may have notices the <span>&lt;title&gt;</span> tag in the <span>&lt;head&gt;</span> section! This tag gives a title to the document that is used by search engines and the favorites tab of a web browser to identify this page.</p> 
@@ -104,61 +104,77 @@
           <p>The <span>&lt;body&gt;</span> is typically sectioned into <span>&lt;header&gt;</span>, <span>&lt;footer&gt;</span>, and the rest of the content. The <span>&lt;header&gt;</span> and <span>&lt;footer&gt;</span> usually display content that is identical to all webpages in the website. The <span>&lt;header&gt;</span> will have the website title, some navigation links, and maybe a small description. The <span>&lt;footer&gt;</span> typically has company contact information, copyright information, and other navigation elements. The following example is the <span>html</span> code for the <span>&lt;header&gt;</span> and the <span>&lt;footer&gt;</span> of this page!</p>
 <pre class="text-align-left">
 &lt;body&gt;
-    &lt;header&gt;
-      &lt;h1&gt;HTML Practice&lt;/h1&gt;
-       &lt;nav&gt;
-          &lt;a href="../../index.html"&gt;&lt;img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"&gt;&lt;/a&gt;
-          &lt;a href="../../Navigation-Pages/Resume-Page/Resume.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"&gt;&lt;/a&gt;
-          &lt;a href="../../Navigation-Pages/Contact/Contact.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links"&gt;   &lt;/a&gt;
-      &lt;/nav&gt;
-      &lt;hr class="hr-dash"&gt;
-    &lt;/header&gt;
-    Rest of the Document!
-    &lt;footer&gt;
-      &lt;p&gt;&lt;a href="#top"&gt; Go to the top!&lt;/a&gt;&lt;/p&gt;
-      &lt;p&gt;&copy; &lt;small&gt;2021 CDonekhan LLC&lt;/small&gt;&lt;/p&gt;
-    &lt;/footer&gt;
+      &lt;header&gt;
+         &lt;h1&gt;HTML Practice&lt;/h1&gt;
+          &lt;nav&gt;
+                  &lt;a href="../../index.html"&gt;&lt;img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"&gt;&lt;/a&gt;
+                  &lt;a href="../../Navigation-Pages/Resume-Page/Resume.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"&gt;&lt;/a&gt;
+                  &lt;a href="../../Navigation-Pages/Contact/Contact.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links"&gt;   &lt;/a&gt;
+          &lt;/nav&gt;
+         &lt;hr class="hr-dash"&gt;
+      &lt;/header&gt;
+           Rest of the Document!
+      &lt;footer&gt;
+         &lt;p&gt;&lt;a href="#top"&gt; Go to the top!&lt;/a&gt;&lt;/p&gt;
+         &lt;p&gt;&copy; &lt;small&gt;2021 CDonekhan LLC&lt;/small&gt;&lt;/p&gt;
+      &lt;/footer&gt;
 &lt;/body&gt;
-
-
-
           </pre>
           <p>The rest of the <span>&lt;body&gt;</span> is typically divided into <span>&lt;section&gt;</span> (s) and other markups to organize the page. It is important to section and label portions of the page with the appropriate tags so that people can read the code, search engines can locate information easily, and people who use auditory aids can understand the webpage properly!  </p>
           <p>Finally, a <span>&lt;main&gt;</span> tag is used to display where the main content of the page is. This content includes parts of the page that are unique only to the webpage. For example: A webpage with a news story will have the <span>&lt;main&gt;</span> tag around the content of the news article.</p>
           <pre class="text-align-left">
-<!DOCTYPE html>
-  &lt;html&gt;
-    &lt;head&gt;
-     content of webpage head
-    &lt;/head&gt;
-  &lt;body&gt;
-    &lt;header&gt;
-     content of webpage header
-    &lt;/header&gt;
-    &lt;main&gt;
-    &lt;section&gt;
-     content of section 1
-    &lt;/section&gt;
-    &lt;section&gt;
-     content of section 2
-    &lt;/section&gt;
+                                                    &lt;!DOCTYPE html&gt;
+                                                        &lt;html&gt;
+                                                            &lt;head&gt;
+                                                                content of webpage head
+                                                            &lt;/head&gt;
+                                                            &lt;body&gt;
+                                                                &lt;header&gt;
+                                                                    content of webpage header
+                                                                &lt;/header&gt;
+                                                                &lt;main&gt;
+                                                                      &lt;section&gt;
+                                                                          content of section 1
+                                                                      &lt;/section&gt;
+                                                                      &lt;section&gt;
+                                                                          content of section 2
+                                                                      &lt;/section&gt;
 
-    &lt;/main&gt;
-    &lt;footer&gt;
-     content of webpage footer
-    &lt;/footer&gt;
-  &lt;/body&gt;
- &lt;/html&gt;
+                                                                  &lt;/main&gt;
+                                                                  &lt;footer&gt;
+                                                                      content of webpage footer
+                                                                  &lt;/footer&gt;
+                                                            &lt;/body&gt;
+                                                        &lt;/html&gt;
 </pre>
         </section>
         <section id="paragraph-list">
           <h1> Paragraphs/Ordered Lists/Unordered Lists/Descriptive List</h1>
-          <p>Paragraphs are lines of text that are separated/spaced out to provide a paragraph. Ordered lists and unordered lists display content in a list format. Unordered will display dots by default and an ordered list will display ordered numbers. A descriptive list gives titles and content for each title in a list format.</p>
+          <p> The <span>&lt;p&gt;</span> (paragraph) tag creates lines of text that are separated/spaced out to provide individual paragraphs. The <span>&lt;ol&gt;</span> (Ordered list) tag and the <span>&lt;ul&gt;</span>(unordered list) tag display content in a list format. The <span>&lt;ul&gt;</span> Unordered list display dots by default and an <span>&lt;ol&gt;</span> ordered list will display list items with numbers. A <span>&lt;dl&gt;</span> (descriptive list) tag gives titles and content for each item on the list.</p>
           <p> An example of these concepts:</p>
               <hr class="example-divider"> 
-              <p class=list-fix> This is the first paragraph of this webpage.</p>
-              <p class=list-fix> This is the second paragraph of this webpage.</p>
-              <p class=list-fix> This is the third paragraph of this webpage.</p>
+              <h2>Text written without tag!</h2>
+              <p>html code:</p>
+              <pre>
+First Item without markup tag!
+Second Item without markup tag!
+Third Item without markup tag!
+              </pre>
+              <p>Output:</p>
+                First Item without markup tag!
+                Second Item without markup tag!
+                Third Item without markup tag!
+                <h2>Paragraph Tag</h2>
+                <p>html code:</p>
+              <pre>
+&lt;p&gt; This is the first paragraph of this webpage.&lt;/p&gt;
+&lt;p&gt; This is the second paragraph of this webpage.&lt;/p&gt;
+&lt;p&gt; This is the third paragraph of this webpage.&lt;/p&gt;
+              </pre>
+              <p>Output:</p>
+              <p> This is the first paragraph of this webpage.</p>
+              <p> This is the second paragraph of this webpage.</p>
+              <p> This is the third paragraph of this webpage.</p>
       <!-- Ordered List That Contains Numbers-->
             <ol class=list-fix>
               <li> This is the first element of an ordered list!</li>
