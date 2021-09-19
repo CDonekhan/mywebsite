@@ -39,7 +39,7 @@
             <p>An <span>&lt;a&gt;(anchor) markup tag</span> is used to create a link from text. The attribute <span>href=""</span> is added to specify the source of the link! This tag is discussed more in the <a href="#link-navigation">link-navigation</a> section.</p>
             <pre>&lt;a href="http://www.ieatass.com"&gt;I would not click this link lol&lt;/a&gt;</pre>
             <p>Throughout this webpage, I refer to markup tags and just tag. They mean the same thing!</p>
-           <nav>
+           <nav id="top-navigation">
               <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div-pre">span-div-pre</a></p>
 
            </nav>
@@ -108,9 +108,15 @@
       &lt;header&gt;
          &lt;h1&gt;HTML Practice&lt;/h1&gt;
           &lt;nav&gt;
-                  &lt;a href="../../index.html"&gt;&lt;img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"&gt;&lt;/a&gt;
-                  &lt;a href="../../Navigation-Pages/Resume-Page/Resume.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"&gt;&lt;/a&gt;
-                  &lt;a href="../../Navigation-Pages/Contact/Contact.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links"&gt;   &lt;/a&gt;
+                  &lt;a href="../../index.html"&gt;&lt;img class= "FPic2"src="../../Index-Resources/home.png" 
+                  alt="Link to Home Page" title="Home Page"&gt;&lt;/a&gt;
+
+                  &lt;a href="../../Navigation-Pages/Resume-Page/Resume.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/resume.jpg"
+                  alt="Link to Resume" title="Resume"&gt;&lt;/a&gt;
+
+                  &lt;a href="../../Navigation-Pages/Contact/Contact.html"&gt;&lt;img class= "FPic2" src="../../Index-Resources/social.png" 
+                  alt="Link to Social Media Links" title="Social Media Links"&gt;   &lt;/a&gt;
+
           &lt;/nav&gt;
          &lt;hr class="hr-dash"&gt;
       &lt;/header&gt;
@@ -289,15 +295,22 @@ Third Item without markup tag!
       &lt;h2&gt;The Anatomy Of A Human&lt;/h2&gt;
         &lt;p&gt;By: Charles Booty&lt;/p&gt;
   &lt;/header&gt;
-      &lt;p&gt;A human is made up of several organ systems. In order to maintain a stable environment inside the body, many of these organ systems need to work together.&lt;/p&gt;
+      &lt;p&gt;A human is made up of several organ systems. In order to maintain a stable environment inside the body,
+       many of these organ systems need to work together.&lt;/p&gt;
   &lt;aside&gt;
   &lt;q&gt;
     This is a pulled quote from the article about body systems...
     &lt;/q&gt;
   &lt;/aside&gt;
-        &lt;p&gt;A few examples are the skeletomuscular system, nervous system, circulatory system, excretory system,immune system, integumentary system, and few more.&lt;/p&gt;
-      &lt;p&gt;To read more about the various organ systems and their function, click this &lt;a href="https://www.hillandponton.com/human-body-organ-systems/"&gt;link!&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;A few examples are the skeletomuscular system, nervous system, circulatory system, excretory system,immune system,
+         integumentary system, and few more.&lt;/p&gt;
+
+      &lt;p&gt;To read more about the various organ systems and their function, click this 
+
+      &lt;a href="https://www.hillandponton.com/human-body-organ-systems/"&gt;link!&lt;/a&gt;&lt;/p&gt;
+
     &lt;footer&gt;Published: September 14, 2021&lt;/footer&gt;
+
   &lt;/article&gt;
             </pre>
             <p>Output:</p>
@@ -329,8 +342,9 @@ Third Item without markup tag!
   &lt;h2&gt;References and Potential Helpful Articles
   &lt;/h2&gt;
   &lt;p&gt;This is a textbook on human anatomy that can be helpful. Here is the link: https://openstax.org/details/books/anatomy-and-physiology&lt;/p&gt;
-  &lt;p&gt;This is a article on homeostasis in biological organisms that may be helpful. Here is the link: https://www.scientificamerican.com/article/what-is-homeostasis/&lt;/p&gt;
-  &lt;/aside&gt;
+  &lt;p&gt;This is a article on homeostasis in biological organisms that may be helpful. Here is the link: 
+  https://www.scientificamerican.com/article/what-is-homeostasis/&lt;/p&gt;
+&lt;/aside&gt;
               </pre>
               <p>Output:</p> 
           <aside>
@@ -342,30 +356,74 @@ Third Item without markup tag!
           </section>
          <section id="link-navigation">  
               <h1>Links/Navigation</h1>
-                <p>The &lt;a&gt; tag is used to create a hyper link of the content it wraps. The &lt;a&gt; is called an anchor. It uses the &lt;href&gt; attribute to specify the path to the new webpage or section the current webpage. The &lt;target&gt; attribute of the anchor tag can designate where the link is opened in a separate tab.   </p>
-                <p> This section has a &lt;nav&gt; navigation designation! Navigation is used to designate locations where multiple links to other websites are listed such as contact info. Mostly organizational purposes. <br> A url can be used for a link. The directory can be used to direct from the current folder to the webpage being linked to. The root directory is similar to the directory, except the beginning of the path starts with the root folder and moves down. <br> There is also an example of navigation within a webpage in the navigation links at the top of this page! <br> You can also link to a specific section of another page! I'll put an example in a comment on the html! <br> There is a &lt;mailto:&gt; command that can be added to an &lt;href&gt; attribute to send an email. An example of this and its formatting is given!</p>
-                <p> The examples of these concepts:</p>
+                <p>The <span>&lt;a&gt;</span> tag is used to create a hyperlink of the content it wraps. The <span>&lt;a&gt;</span> is called an anchor. It uses the <span>href=""</span> attribute to specify the path to the new webpage or section on the current webpage. The <span>target</span> attribute of the <span>&lt;anchor&gt;</span> tag can designate if the link is opened in a separate tab.   </p>
+                <p> This section has a <span>&lt;nav&gt;</span> tag (Navigation)! <span>&lt;nav&gt;</span> is used to designate locations where multiple links to other websites are listed such as contact info or links to other parts of the website! </p> 
+
+                <p>There is multiple ways to designate the location of a webpage using the <span>href=""</span> attribute:</p> 
+                <ol class="list-fix">
+                  <li> A <span>url</span> can be used for a link to a webpage. </li>
+                <li>The <span>directory</span> can be used to direct from the current folder to the webpage being linked to.</li>
+                <li> The <span>root directory</span> is similar to the <span>directory</span>, except the beginning of the path starts with the <span>root folder</span> of the website and moves down. <span>Root directory</span> links can only be used on a live website since only online servers have a <span>root folder</span>.</li>
+                </ol>
+                
+                <p> There is also an example of navigation within a webpage in the navigation links at the <a href="#top-navigation"> top of this page!</a>  html for this link: &lt;a href="#top-navigation"&gt;top of this page!&lt;/a&gt; </p><p> There is also <span>mailto:</span> command that can be added to an <span>href=""</span> attribute to send an email. The <span>?subject=</span> aspect of the <span>mailto:</span> command adds a title to the email being sent! (%20 is code for space)!</p>
+                <p> Examples of these concepts:</p>
                 <hr class="example-divider">
-                <nav>
+                <p>html code:</p>
+                <pre class="text-align-left">
+&lt;nav&gt;
+    &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=3egXqihisFQ"&gt;This is a special link that redirects to another page!&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=D2_r4q2imnQ" target="_blank"&gt;This is a special link that redirects to another page on another tab!&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="https://cdonekhan.github.io/mywebsite/Just-For-Fun/Buttons/Buttons.html"&gt;Url for buttons using direct link&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="../../Just-For-Fun/Buttons/Buttons.html"&gt;url for buttons using directory&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="/Just-For-Fun/Buttons/Buttons.html"&gt;url for buttons using root directory link&lt;/a&gt;&lt;/p&gt;  
+
+    &lt;p&gt;&lt;a href="mailto:cmemequeen@gmail.com?subject=Hi%20there%20brother!%20lol"&gt;Send mail to me!&lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;
+                </pre>  
+              <p>Output:</p> 
+              <nav>
                 <p><a href="https://www.youtube.com/watch?v=3egXqihisFQ">This is a special link that redirects to another page!</a></p>
-                <p>(Instrumental Math Rock)</p>
                 <p><a href="https://www.youtube.com/watch?v=D2_r4q2imnQ" target="_blank">This is a special link that redirects to another page on another tab!</a></p>
                 <p><a href="https://cdonekhan.github.io/mywebsite/Just-For-Fun/Buttons/Buttons.html">Url for buttons using direct link</a></p>
                 <p><a href="../../Just-For-Fun/Buttons/Buttons.html">url for buttons using directory</a></p>
-                <p><a href="/Just-For-Fun/Buttons/Buttons.html">url for buttons using root directory link</a></p>
-                <!--    <a href="../../class-notes/history/history.html#sub-section3">This is a link to the third subsection of the history tab. This uses a subject id attribute in the history page!</a>                                                            -->
+                <p><a href="/Just-For-Fun/Buttons/Buttons.html">url for buttons using root directory link</a></p>     
                 <p><a href="mailto:cmemequeen@gmail.com?subject=Hi%20there%20brother!%20lol">Send mail to me!</a></p>
               </nav>
                 
           </section>
           <section id="div-main-blockquote">
             <h1>
-              Div/Main/Block Quote
+              div/block-quote
             </h1>
-              <p> &lt;Div&gt; is used to portion sections that are not clearly labeled into a defined section. This is good for extra content such as a random button for music like on this page haha. &lt;div&gt; is also used to encase the inside of the &lt;body&gt; section which helps with formatting in css, this is more of convention than a rule. &lt;main&gt; wraps the main portion of the webpage. This excludes the footer and header. This also excludes any content that can be percieved as extra such as an external &lt;aside&gt;. The &lt;blockquote&gt; is for large quotes or lists of quotes. </p>
-                <p> An example of these concepts:</p>
+              <p> <span>&lt;div&gt;</span> is used to portion sections that are not clearly labeled into a defined <span>&lt;section&gt;</span> tag. This is good for extra content such as a random button for music like on this page haha. <span>&lt;div&gt;</span> is also used to encase the inside of the <span>&lt;body&gt;</span> section which helps with formatting in <span>css</span>, this is more of convention than a rule. The <span>&lt;blockquote&gt;</span> is for large quotes or lists of quotes. Citations in <span>&lt;blockquote&gt;</span>(s) can be done with various formats. </p>
+                <p> Examples of these concepts:</p>
                 <hr class="example-divider">
-              </p>
+                <p>html code:</p>
+                 <pre class="text-align-left">
+&lt;div&gt;
+    &lt;blockquote cite="https://www.facebook.com/zuck/posts/10101319050523971"&gt;
+      "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. 
+      The future is coming." - Mark Zuckerberg
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. 
+      The future is coming." - &lt;cite&gt;&lt;a href="https://www.facebook.com/zuck/posts/10101319050523971"&gt;Mark Zuckerberg&lt;/a&gt;&lt;/cite&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones.
+      The future is coming." 
+      &lt;footer&gt;- &lt;cite&gt;&lt;a href="https://www.facebook.com/zuck/posts/10101319050523971"&gt;Mark Zuckerberg&lt;/a&gt;&lt;/cite&gt;
+      &lt;/footer&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+              </pre>
+                <p>Output:</p>  
+                <div>
             <blockquote cite="https://www.facebook.com/zuck/posts/10101319050523971">
               "Virtual reality was once the dream of science fiction. But the internet was also once a dream, and so were computers and smartphones. The future is coming." - Mark Zuckerberg
             </blockquote>
@@ -377,37 +435,75 @@ Third Item without markup tag!
               <footer>- <cite><a href="https://www.facebook.com/zuck/posts/10101319050523971">Mark Zuckerberg</a></cite>
               </footer>
             </blockquote>
+          </div>
           </section>
           <section id="address-break-strong">
-           <h1>Address/break/Strong Tag/Small Tag</h1>
-           <p>This section has an &lt;address&gt; tag for putting a geographical address. The information in the &lt;address&gt; tag is formatted in italics and can be found in a search as an address! The &lt;strong&gt; tag is used to indicate strong importance or urgency. The &lt;strong&gt; element is default bold. A &lt;br&gt; tag is a break. The break places information in separate lines for the same text section. The &lt;small&gt; tag is used for disclaimers, caveots, legal restrictions, and copyright information.</p>
+           <h1>Address/Break/Strong Tag/Small Tag</h1>
+           <p>An <span>&lt;address&gt;</span> tag is for a geographical address. The <span>&lt;address&gt;</span> tag outputs text in italics and can be found in a search engine as an address! The <span>&lt;strong&gt;</span> tag is used to indicate importance or urgency. The <span>&lt;strong&gt;</span> tag outputs bold text by default. A <span>&lt;br&gt;</span> tag is a break. The break places information in separate lines for the same text section. The <span>&lt;small&gt;</span> tag is used for disclaimers, caveots, legal restrictions, and copyright information. the <span>&lt;small&gt;</span> outputs text at a smaller font.</p>
            <p> An example of these concepts:</p>
            <hr class="example-divider">
+           <p>html code:</p>
+           <pre class="text-align-left">
+&lt;h2&gt;Contact&lt;/h2&gt;
+    &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; us at coolrobinex@gmail.com&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; 555-555-5555&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Address:&lt;/strong&gt;&lt;/p&gt;
+    &lt;address&gt;
+        Robin Expertise &lt;br&gt;
+        5555 Robin Way&lt;br&gt;
+        City, State 33333
+        &lt;p&gt;&lt;small&gt;*There are currently no in person visits at the moment. Please call for information on shipping!&lt;/small&gt;&lt;/p&gt;
+    &lt;/address&gt;
+             </pre>
+           <p>Output:</p>  
            <h2>Contact</h2>
-           <p><strong>Email:</strong> us at coolrobinex@gmail.com</p>
-           <p><strong>Phone:</strong> 555-555-5555</p>
-           <p><strong>Address:</strong></p>
+            <p><strong>Email:</strong> us at coolrobinex@gmail.com</p>
+            <p><strong>Phone:</strong> 555-555-5555</p>
+            <p><strong>Address:</strong></p>
            <address>
             Robin Expertise <br>
             5555 Robin Way<br>
             City, State 33333
-           <p><small>*There are currently no in person visits at the moment. Please call for information on shipping!</small></p>
+             <p><small>*There are currently no in person visits at the moment. Please call for information on shipping!</small></p>
            </address>
           </section>
           <section id="hr-em">
             <h1>Horizontal Rule/Emphisis</h1>
-            <p>An &lt;hr&gt; tag is used to separate different blocks of content inside of a &lt;section&gt;, &lt;article&gt;, etc. This separatation is made for thematic breaks and subject (concept) changes. &lt;em&gt; (emphisis tags) add emphisis to particular words to change the meaning of the sentance. I have been using them to note the different types of tags but they are typically used like the below example. Emphasis is displayed as italics!</p>
-            <p> An example of these concepts:</p>
+              <p>An <span>&lt;hr&gt;</span> tag is used to separate different blocks of content inside of a <span>&lt;section&gt;</span>, <span>&lt;article&gt;</span>, etc. This separatation is made for thematic breaks and subject (concept) changes. <span>&lt;em&gt;</span>(emphisis) tags add emphisis to particular words to change the meaning of the sentance. <span>&lt;em&gt;</span>> outputs text in italics!</p>
+              <p> Examples of these concepts:</p>
             <hr class="example-divider">
-            <p>The first rule of Fight Club is: You &lt;do not&gt; talk about Fight Club. I don't think I have to explain why this rule is so important!</p>
-            <hr>
-            <p>The second rule of Fight Club is: &lt;Always&gt; bring cupcakes. &lt;always bring cupcakes.&gt;</p>
+            <p>html code:</p>
+            <pre class="text-align-left">
+            &lt;p&gt;The first rule of Fight Club is: You &lt;em&gt;do not&lt;/em&gt; talk about Fight Club. I don't think I have to explain why this rule is so important!&lt;/p&gt;
+            &lt;hr&gt;
+            &lt;p&gt;The second rule of Fight Club is: &lt;em&gt;Always&lt;/em&gt; bring cupcakes. &lt;em&gt;always bring cupcakes.&lt;/em&gt;&lt;/p&gt;
+            </pre>
+            <p>Output:</p>
+              <p>The first rule of Fight Club is: You <em>do not</em> talk about Fight Club. I don't think I have to explain why this rule is so important!</p>
+              <hr>
+              <p>The second rule of Fight Club is: <em>Always</em> bring cupcakes. <em>always bring cupcakes.</em></p>
           </section>
           <section id="span-div-pre">
-            <h1>span/div/pre</h1>
-            <p>&lt;span&gt; and &lt;div&gt; are markup tags that place non-specific labels on blocks of text. The labels can later be edited in css. &lt;span&gt; is used inside a block of content (such as a word or phrase in a sentence), while &lt;div&gt; is used for an entire block of content (an entire paragraph is surrounded by dev). css will be used to show where the &lt;div & span&gt; tags are. <br> &lt;pre&gt; is a markup tag that displays text & spacing exactly as it appears in the content. <br> There is a list of codes that can be used to add symbols that are commonly used in html structure such as &lt; the carrot. An example of a few of these are in the &lt;pre&gt; example. A full list of these codes are available in the coding resources webpage!</p>
-            <p> The example for these concepts:</p>
+            <h1>span/div vs pre</h1>
+            <p><span>&lt;span&gt;</span> and <span>&lt;div&gt;</span> are markup tags that place non-specific labels on blocks of text and the labels can later be edited in css. <span>&lt;span&gt;</span> is used inside a block of content (such as a word or phrase in a sentence), while <span>&lt;div&gt;</span> is used for an entire block of content (an entire paragraph is surrounded by dev). </p>
+            <p> <span>&lt;pre&gt;</span> is a markup tag that displays text & spacing exactly as it appears in the <span>html</span>. <br> There is a list of codes that can be used to add symbols that are commonly used in html structure such as &lt; (the carrot). An example of a few of these are in the &lt;pre&gt; example. A full list of these codes are available in the <a href="../../Web-Development-Practice/Useful-Dev-Links/Useful-Dev-Links.html">coding resources webpage!</a></p>
+            <p> Examples for these concepts:</p>
             <hr class="example-divider">
+            <p>html code:</p>
+          <pre class="text-align-left">
+        &lt;div class="example-color"&gt;&lt;p&gt;One two three four five six seven eight nine ten.
+             This entire block of text is surrounded by a div tag.&lt;/p&gt;
+        &lt;/div&gt;
+            &lt;p&gt;One &lt;span class="example-color"&gt;two&lt;/span&gt; three four &lt;span class="example-color"&gt;five&lt;/span&gt; six seven eight nine ten.
+             Certain words are wrapped by a span tag.&lt;/p&gt;
+
+        &lt;div&gt;
+          &lt;pre&gt;
+                This is a div...
+                &lt;p&gt;This paragraph is nested&lt;/p&gt;
+          &lt;/pre&gt;        
+        &lt;/div&gt;
+            <p>Output:</p>
             <div class="example-color"><p>One two three four five six seven eight nine ten. This entire block of text is surrounded by a div tag.</p></div>
             <p>One <span class="example-color">two</span> three four <span class="example-color">five</span> six seven eight nine ten. Certain words are wrapped by a span tag.</p>
             <pre>
@@ -416,6 +512,7 @@ Third Item without markup tag!
                 &lt;p&gt;This paragraph is nested&lt;/p&gt;
               &lt;/div&gt;          
             </pre>
+
           </section>
          <div>
             <h1>The section below this line is the footer!</h1>
