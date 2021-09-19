@@ -64,7 +64,7 @@ html {
     margin-bottom: 20px;
 }
   .list-fix {
-    text-align: left;
+    list-style-position: inside;
 }
   .hr-dash {
     border: dashed skyblue 1px;

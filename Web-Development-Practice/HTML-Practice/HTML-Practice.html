@@ -34,10 +34,11 @@
            <p><span>html</span> stands for hypertext markup language. The hypertext refers to the hyperlinks that can be created to link different webpages. The markup section refers to the various tags used throughout the language.</p>
              <p> An example of a markup tag could be the simple <span>&lt;p&gt;</span> (paragraph) markup tag.</p>
             <pre>&lt;p&gt;Hello World&lt;/p&gt;</pre>
-            <p>All markup tags follow the format of the opening-tag: <span>&lt;p&gt;</span> content: <span>Hello World</span> closing-tag: &lt;/p&gt;</p>
+            <p>All markup tags follow the format of the <br>opening-tag: <span>&lt;p&gt;</span> <br> content: <span>Hello World</span> <br>closing-tag: &lt;/p&gt;</p>
             <p><span>Attributes</span> are added to a tag to give it a particular property.</p>
-            <p>An <span>&lt;a&gt;(anchor) tag</span> is used to create a link from text. The attribute <span>href=""</span> is added to specify the source of the link!</p>
+            <p>An <span>&lt;a&gt;(anchor) markup tag</span> is used to create a link from text. The attribute <span>href=""</span> is added to specify the source of the link! This tag is discussed more in the <a href="#link-navigation">link-navigation</a> section.</p>
             <pre>&lt;a href="http://www.ieatass.com"&gt;I would not click this link lol&lt;/a&gt;</pre>
+            <p>Throughout this webpage, I refer to markup tags and just tag. They mean the same thing!</p>
            <nav>
               <p><a href="#webpage-structure">webpage-structure</a>---<a href="#paragraph-list">paragraph-list</a>---<a href="#heading-size">heading-size</a>---<a href="#class-images">class-images</a>---<a href="#article">article</a>---<a href="#aside">aside</a>---<a href="#link-navigation">link-navigation</a>---<a href="#div-main-blockquote">div-main-blockquote</a>---<a href="#address-break-strong">address-break-strong</a>---<a href="#hr-em">hr-em</a>---<a href="#span-div-pre">span-div-pre</a></p>
 
@@ -47,7 +48,7 @@
         <section id="webpage-structure"> 
           <h1>Webpage Structure</h1>
           <h2>General Page Layout</h2>
-          <p>To begin a webpage a <span>&lt;!DOCTYPE html&gt;</span> is written to specify the <span>html type</span> of the page. The page is then wrapped in an <span>&lt;html&gt;</span> tag to display where the html content is.</p>
+          <p>To begin a webpage a <span>&lt;!DOCTYPE html&gt;</span> tag is written to specify the <span>html type</span> of the page. The page is then wrapped in an <span>&lt;html&gt;</span> tag to display where the html content is.</p>
           <pre class="text-align-left">
                                                   &lt;!DOCTYPE html&gt;
                                                     &lt;html&gt;
@@ -101,7 +102,7 @@
       <p> You may have notices the <span>&lt;title&gt;</span> tag in the <span>&lt;head&gt;</span> section! This tag gives a title to the document that is used by search engines and the favorites tab of a web browser to identify this page.</p> 
           <h2>The Body</h2>
           <p> The <span>&lt;body&gt;</span> is where all the content of the webpage is displayed.</p>
-          <p>The <span>&lt;body&gt;</span> is typically sectioned into <span>&lt;header&gt;</span>, <span>&lt;footer&gt;</span>, and the rest of the content. The <span>&lt;header&gt;</span> and <span>&lt;footer&gt;</span> usually display content that is identical to all webpages in the website. The <span>&lt;header&gt;</span> will have the website title, some navigation links, and maybe a small description. The <span>&lt;footer&gt;</span> typically has company contact information, copyright information, and other navigation elements. The following example is the <span>html</span> code for the <span>&lt;header&gt;</span> and the <span>&lt;footer&gt;</span> of this page!</p>
+          <p>The <span>&lt;body&gt;</span> is typically sectioned into <span>&lt;header&gt;</span>, <span>&lt;footer&gt;</span>, and the rest of the content. The <span>&lt;header&gt;</span> and <span>&lt;footer&gt;</span> usually display content that is identical to all webpages in the website. The <span>&lt;header&gt;</span> will have the website title, some navigation links, and maybe a small description. The <span>&lt;footer&gt;</span> typically has company contact information, copyright information, and other navigation elements. The following example is the <span>html</span> code for the <span>&lt;header&gt;</span> and the <span>&lt;footer&gt;</span> of this page!</p> Many of the tags may be unfamiliar but they will be explained later in this document. The main takeaway is the existance of a <span>&lt;header&gt;</span> and <span>&lt;footer&gt;</span>.
 <pre class="text-align-left">
 &lt;body&gt;
       &lt;header&gt;
@@ -150,8 +151,8 @@
         </section>
         <section id="paragraph-list">
           <h1> Paragraphs/Ordered Lists/Unordered Lists/Descriptive List</h1>
-          <p> The <span>&lt;p&gt;</span> (paragraph) tag creates lines of text that are separated/spaced out to provide individual paragraphs. The <span>&lt;ol&gt;</span> (Ordered list) tag and the <span>&lt;ul&gt;</span>(unordered list) tag display content in a list format. The <span>&lt;ul&gt;</span> Unordered list display dots by default and an <span>&lt;ol&gt;</span> ordered list will display list items with numbers. A <span>&lt;dl&gt;</span> (descriptive list) tag gives titles and content for each item on the list.</p>
-          <p> An example of these concepts:</p>
+          <p> The <span>&lt;p&gt;</span> (paragraph) tag creates lines of text that are separated/spaced out to provide individual paragraphs. The <span>&lt;ol&gt;</span> (Ordered list) tag and the <span>&lt;ul&gt;</span>(unordered list) tag display content in a list format. The <span>&lt;ul&gt;</span> (Unordered list) display dots by default and an <span>&lt;ol&gt;</span> (Ordered list) will display list items with numbers. A <span>&lt;dl&gt;</span> (descriptive list) tag gives titles and content for each item on the list.</p>
+          <p> Examples of these concepts:</p>
               <hr class="example-divider"> 
               <h2>Text written without tag!</h2>
               <p>html code:</p>
@@ -175,29 +176,49 @@ Third Item without markup tag!
               <p> This is the first paragraph of this webpage.</p>
               <p> This is the second paragraph of this webpage.</p>
               <p> This is the third paragraph of this webpage.</p>
-      <!-- Ordered List That Contains Numbers-->
+              <h2>Ordered List Tag</h2>
+              <p>html code:</p>
+              <pre class="text-align-left">
+                                            &lt;ol&gt;
+                                               &lt;li&gt; This is the first element of an ordered list!&lt;/li&gt;
+                                               &lt;li&gt; This is the second element of an ordered list!&lt;/li&gt;
+                                               &lt;li&gt; This is the third element of an ordered list! &lt;/li&gt;
+                                            &lt;/ol&gt;
+          </pre>
+            <p>Output:</p>
             <ol class=list-fix>
               <li> This is the first element of an ordered list!</li>
               <li> This is the second element of an ordered list!</li>
-              <li>
-                <ol>
-                  <li>This is the first element of an ordered list! This is nested inside the overall list.</li>
-                  <li>This is the second element of an ordered list! This is nested inside the overall list.</li>
-                  <li>This is the third element of an ordered list! This is nested inside the overall list.</li>
-                </ol></li>
+              <li> This is the third element of an ordered list! </li>
             </ol>
-      <!-- Unordered list that does not contain numbers-->
+            <h2>Unordered List Tag</h2>
+               <p>html code:</p>
+               <pre class="text-align-left">
+                                            &lt;ul&gt;
+                                              &lt;li&gt; This is the first element of an unordered list!&lt;/li&gt;
+                                              &lt;li&gt; This is the second element of an unordered list!&lt;/li&gt;
+                                              &lt;li&gt; This is the third element of an unordered list!&lt;/li&gt;
+                                            &lt;/ul&gt;
+               </pre>
+            <p>Output:</p>
             <ul class=list-fix>
-              <li> This is the first element of an unordered list!</li>
-              <li> This is the second element of an unordered list!</li>
-              <li>
-                <ul>
-                  <li>This is the first element of an unordered list! This is nested inside the overall list.</li>
-                  <li>This is the second element of an unordered list! This is nested inside the overall list.</li>
-                  <li>This is the third element of an unordered list! This is nested inside the overall list.</li>
-                </ul></li>
+                <li> This is the first element of an unordered list!</li>
+                <li> This is the second element of an unordered list!</li>
+                <li> This is the third element of an unordered list!</li>
             </ul>
-      <!-- Descriptive List with titles and description-->
+            <h2>Descriptive List</h2>
+            <p>html code:</p>
+            <pre class="text-align-left">
+                                                      &lt;dl&gt;
+                                                          &lt;dt&gt;Animal Cell&lt;/dt&gt;
+                                                            &lt;dd&gt;Eukaryotic Cell without a cell wall.&lt;/dd&gt;
+                                                        &lt;dt&gt;Plant Cell&lt;/dt&gt;
+                                                            &lt;dd&gt;Eukaryotic Cell with a cell wall.&lt;/dd&gt;
+                                                          &lt;dt&gt;Bacteria Cell&lt;/dt&gt;
+                                                              &lt;dd&gt;Prokaryotic Cell with a cell wall.&lt;/dd&gt;
+                                                      &lt;/dl&gt;
+              </pre>
+            <p>Output:</p>
               <dl class=list-fix>
               <dt>Animal Cell</dt>
               <dd>Eukaryotic Cell without a cell wall.</dd>
@@ -209,46 +230,83 @@ Third Item without markup tag!
         </section>
         <section id="heading-size">
               <h1>Various Heading Sizes (This heading is h1)</h1>
-              <h2>This is a list of different heading sizes that are default.
+              <p> The <span>&lt;h1&gt;</span> tag (heading 1) is used to label paragraphs and other heading sections. There are also <span>&lt;h2&gt;</span>, <span>&lt;h3&gt;</span>, <span>&lt;h4&gt;</span>, <span>&lt;h5&gt;</span>, and <span>&lt;h6&gt;</span> tags that are used to create sub-headings. Here is a list of different heading as default. </p>
                 <hr class="example-divider">
+                <p>html code:</p>
+                <pre>
+&lt;h2&gt;This is an h2 heading!&lt;/h2&gt;
+&lt;h3&gt;This is an h3 heading!&lt;/h3&gt;
+&lt;h4&gt;This is an h4 heading!&lt;/h4&gt;
+&lt;h5&gt;This is an h5 heading!&lt;/h5&gt;
+&lt;h6&gt;This is an h6 heading!&lt;/h6&gt;
+                </pre>
+                <p>Output:</p>
               </h2>
               <h2>This is an h2 heading!</h2>
               <h3>This is an h3 heading!</h3>
               <h4>This is an h4 heading!</h4>
               <h5>This is an h5 heading!</h5>
               <h6>This is an h6 heading!</h6>
-              <hr class="example-divider">
-<pre>
-  &lt;h2&gt;This is an h2 heading!&lt;/h2&gt;
-  &lt;h3&gt;This is an h3 heading!&lt;/h3&gt;
-  &lt;h4&gt;This is an h4 heading!&lt;/h4&gt;
-  &lt;h5&gt;This is an h5 heading!&lt;/h5&gt;
-  &lt;h6&gt;This is an h6 heading!&lt;/h6&gt;
-</pre>
         </section>
         <section id="class-images">
           <h1>Classes/Images</h1>
-          <p>A &lt;class&gt; is added to a markup/tag to designate style/css to be added to that line of content. The style changes to a partiuclar &lt;class&gt; can be found in the css stylesheet attached to the html document. The stylesheet link can be found in the &lt;head&gt; section.</p>
-          <p>An &lt;img&gt; tag is used to add an image to the webpage. An image can have three attributes: the &lt;src&gt; atttribute adds the link to the image source; the &lt;alt&gt; attribute adds text information used to label the image in the html and when the image source is compromised; and the &lt;title&gt; attribute, which is displays a text description of the image if a cursor hovers over the image.</p>
+          <p>A <span>class=""</span> is added to a markup tag to designate <span>css</span> style to be added to that line of content. In the <span>css</span></p>, styling characteristics can be added to the that particular <span>class=""</span>. 
+          <p>An <span>&lt;img&gt;</span> tag is used to add an image to the webpage. An image can have three attributes: the <span>src</span> atttribute adds the link to the image source; the <span>alt</span> attribute adds text information used to label the image in the webpage and when the image source is compromised; and the <span>title</span> attribute, which displays a text description of the image if a cursor hovers over the image.</p>
           <p> An example of these concepts:</p>
           <hr class="example-divider">
+          <p>html code:</p>
+          <pre>
+&lt;img class="FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class"&gt;
+&lt;img class="FPic4 "src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image without border added by Class"&gt;
+            </pre>
+          <p>css code in <span>HTML-Practice.css:</span></p>
+          <pre class="text-align-left">
+                                                                      .FPic4 {
+                                                                        max-width:300px;
+                                                                        margin-bottom: 20px;
+                                                                      }
+
+                                                                      .example-image-format {
+
+                                                                        border:red 8px solid;
+                                                                      }
+        </pre>
+          <p>Output:</p>
           <img class="FPic4 example-image-format" src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image with Border added by Class">
-          <img class="FPic4 "src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image without border added by Class">
+          <img class="FPic4 "src="HTML-Practice-Resources/trav.jfif" alt="Image of Travis Scott Concert" title="Image without border added by Class"> 
         </section>
        <section id="article">
         <h1>Article Practice!</h1>
-             <p>This portion uses an &lt;article&gt; tag! An &lt;article&gt; is standalone content with a title and body. Think of a typical text section in a webpage. &lt;article&gt; (s) typically contain a header (&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt; etc) and a paragraph. An internal &lt;aside&gt; can be added to show a pulled quote from the &lt;article&gt;. 
+             <p>This portion uses an <span>&lt;article&gt;</span> tag! An <span>&lt;article&gt;</span> is standalone content with a title and body. Think of a typical text section in a webpage. &lt;article&gt; (s) typically contain a <span>&lt;header&gt;</span> (<span>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;</span> etc) and a <span>&lt;p&gt;</span> (paragraph). An internal <span>&lt;aside&gt;</span> and a <span>&lt;q&gt;</span> (quote) tag can be added to show a pulled quote from the <span>&lt;article&gt;</span>. 
              </p>
-            <p>The &lt;footer&gt; at the end gives credits and additional information. A &lt;header&gt; and a &lt;footer&gt; can also be applied to an &lt;article&gt; just like the &lt;body&gt; </p>
+            <p>The <span>&lt;footer&gt;</span> at the end gives credits and additional information. A <span>&lt;header&gt;</span> and a <span>&lt;footer&gt;</span> can also be applied to an <span>&lt;article&gt;</span> just like the <span>&lt;body&gt;</span> </p>
             <p> An example of these concepts:</p>
             <hr class="example-divider">
+            <p>html code:</p>
+            <pre class="text-align-left">
+&lt;article&gt;
+  &lt;header&gt;
+      &lt;h2&gt;The Anatomy Of A Human&lt;/h2&gt;
+        &lt;p&gt;By: Charles Booty&lt;/p&gt;
+  &lt;/header&gt;
+      &lt;p&gt;A human is made up of several organ systems. In order to maintain a stable environment inside the body, many of these organ systems need to work together.&lt;/p&gt;
+  &lt;aside&gt;
+  &lt;q&gt;
+    This is a pulled quote from the article about body systems...
+    &lt;/q&gt;
+  &lt;/aside&gt;
+        &lt;p&gt;A few examples are the skeletomuscular system, nervous system, circulatory system, excretory system,immune system, integumentary system, and few more.&lt;/p&gt;
+      &lt;p&gt;To read more about the various organ systems and their function, click this &lt;a href="https://www.hillandponton.com/human-body-organ-systems/"&gt;link!&lt;/a&gt;&lt;/p&gt;
+    &lt;footer&gt;Published: September 14, 2021&lt;/footer&gt;
+  &lt;/article&gt;
+            </pre>
+            <p>Output:</p>
          <article>
            <header>
               <h2>The Anatomy Of A Human</h2>
                 <p>By: Charles Booty</p>
            </header>
               <p>A human is made up of several organ systems. In order to maintain a stable environment inside the body, many of these organ systems need to work together.</p>
-           <!-- This is an internal asside -->
            <aside>
            <q>
              This is a pulled quote from the article about body systems...
@@ -262,9 +320,19 @@ Third Item without markup tag!
           <section id="aside">
             <h1>Aside Practice!
             </h1>
-            <p> This sections uses the &lt;aside&gt; markup! The &lt;aside&gt; is for resources that may be related to the content on the page but is simply just an extra resource or additional related information. An example of this is an external resource related to a topic like an interesting biochemical reaction in a textbook that is being researched but is not the main focus of the textbook section. This type of &lt;aside&gt; is specifically external to another section.</p>
-            <p> An example of these concepts:</p>
+            <p>The <span>&lt;aside&gt;</span> tag is an extra resource or additional information that is related to the content of the page. An example of this is webpage about a topic in chemistry that requires calculus to understand. An <span>&lt;aside&gt;</span>aside is used to provide resources to learn the calculus for the chemistry webpage!
+            <p> An example of an aside:</p>
               <hr class="example-divider">
+              <p>html code:</p>
+              <pre class="text-align-left">
+&lt;aside&gt;
+  &lt;h2&gt;References and Potential Helpful Articles
+  &lt;/h2&gt;
+  &lt;p&gt;This is a textbook on human anatomy that can be helpful. Here is the link: https://openstax.org/details/books/anatomy-and-physiology&lt;/p&gt;
+  &lt;p&gt;This is a article on homeostasis in biological organisms that may be helpful. Here is the link: https://www.scientificamerican.com/article/what-is-homeostasis/&lt;/p&gt;
+  &lt;/aside&gt;
+              </pre>
+              <p>Output:</p> 
           <aside>
             <h2>References and Potential Helpful Articles
             </h2>
