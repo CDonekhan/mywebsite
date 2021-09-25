@@ -3,10 +3,10 @@
 /* Edits attributes of a hyperlink */
 /* Attributes of Headers*/
 h1 {
-    border:rebeccapurple solid 4px;
+    border:royalblue solid 4px;
 }
 h2 {
-    border:rebeccapurple solid 0px;
+    border:royalblue solid 0px;
 }
 /* Edits of Classes*/
 .FPic3 {
@@ -19,16 +19,13 @@ h2 {
 }
 .example-divider {
 
-    border:purple 1px dashed;
+    border:aquamarine 1px dashed;
 
 }
 .example-image-format {
 
     border:red 8px solid;
 
-}
-.hr-dash {
-    border:purple 0px solid;
 }
 .example-color {
     color:greenyellow;

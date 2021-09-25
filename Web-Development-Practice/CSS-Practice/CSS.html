@@ -3,9 +3,9 @@
   
   <head>
     <meta charset="utf-8">
-    <title>Sample Page</title>
+    <title>CSS-Practice</title>
     <link rel="stylesheet" href="../../Sample-Page/Sample.css">
-    <link rel="stylesheet" href="Sample.css">
+    <link rel="stylesheet" href="CSS.css">
     <meta name="viewport" content="width=device=width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
   </head>
   
@@ -13,127 +13,46 @@
     <div>
       
       <header>
-        <h1>Sample Page!</h1>
+        <h1>CSS-Practice!</h1>
         <nav>
             <a href="../../index.html"><img class= "FPic2"src="../../Index-Resources/home.png" alt="Link to Home Page" title="Home Page"></a>
             <a href="../../Navigation-Pages/Resume-Page/Resume.html"><img class= "FPic2" src="../../Index-Resources/resume.jpg" alt="Link to Resume" title="Resume"></a>
             <a href="../../Navigation-Pages/Contact/Contact.html"><img class= "FPic2" src="../../Index-Resources/social.png" alt="Link to Social Media Links" title="Social Media Links">   </a>
              </nav>
-             <hr class="hr-dash">
+             <hr class="no-dash">
       </header>
-      
       <main>
         <section>
-        </section>
-      </main>
- 
-      <footer>
-        <p><a href="#top"> Go to the top!</a></p>
-        <p>&copy; <small>2021 CDonekhan LLC</small></p>
-    </footer>
-      
-    </div>
-  </body>
-  
-</html>
+            <section id="Set-Up-CSS">
+                <h1>Set-up for <span>CSS</span>!</h1>
+                    <h2>Default Stylesheet</h2>
+                    <p>There is a default <span>stylesheet</span> that browsers (chrome, firefox, safari, etc) use to display <span>html</span> documents with no <span>css</span>. Additions of <span>css</span> will modify this <span>stylesheet</span>.</p>
+                    <p>If you right click an aspect of a webpage (line of text or headline) and click <span>inspect</span>, the browser will show you all the stylings that aspect contains. You can try it on this webpage!</p>
+                    <h2>Adding CSS to Page!</h2>
+                    <p>An <span>inline style</span> adds the <span>css</span> directly into a line of <span>html</span> code using a <span>&lt;style&gt;</span> attribute!</p>
+                    <p>An <span>internal</span> style sheet uses a <span>&lt;style&gt;</span> markup tag inside of the <span>&lt;head&gt;</span> tag to add styling to multiple parts of the page at once!</p>
+                    <p>An <span>external</span> stylesheet uses a <span>&lt;link&gt;</span> tag inside the <span>&lt;head&gt;</span> section to link to an external <span>.css file</span>. The <span>&lt;link&gt;</span> tag uses the <span>href""</span> tag to provide the path to the <span>.css file</span> and the <span>rel=""</span> attribute to register the <span>.css file</span> as a stylesheet for the webpage!  </p>
 
-
-<!-- This is a sample set up for playing a song off a button
-    <div>
-        <a href= "javascript:minecarti ();"><img class= "FPic2 FPic3" src="Our-Music-Resources/minecraft.png" alt="Minecraft Sheep Chillin" title="Minecarti!"></a>
-        <audio id="minecarti" src="Our-Music-Resources/minecarti" preload="auto"></audio>
-        <script>
-            function mine () {
-                        document.getElementById('green').loop = true;
-                        document.getElementById('mine').play();
-                    }
-        </script>
-    </div>
--->
-
-<!--This is a sample set up for a Journal Section
-   <article>
-    <h1><strong>Chapter 1</strong></h1>
-       <h2>Section 1</h2>
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-      <h2>Section 1</h2>
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-      <h2>Section 1</h2>
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 2</h3>
-                <p></p>
-                <hr class="hr-dash">
-            <h3>Sub Section 3</h3>
-                <p></p>
-    <h1><strong>Chapter 2</strong></h1>
-   </article>
-   -->   
-
-
-
-<!-- Layout for Teaching Section!    
-            <section id="1">
-                <h1>Section</h1>
-                    <h2>Sub-Section 1</h2>
-                        <p>First Line of Sub-section 1</p>
-                    <h2>Sub-Section 1</h2>
-                        <p>First Line of Sub-section 1</p>
-                    <h2>Sub-Section 1</h2>
-                        <p>First Line of Sub-section 1</p>
+                <h2>Sub-Section 1</h2>
+                    <p>First Line of Sub-section 1</p>
+                <h2>Sub-Section 1</h2>
+                    <p>First Line of Sub-section 1</p>
                     <hr class="hr-dash">
                     <p>html code:</p>
                         <pre class="text-align-left">
 
                         </pre>
                     <p>css code:</p>
-                        <pre class="text-align-left">
+                         <pre class="text-align-left">
 
                         </pre>
                     <p>output:</p>
             </section>
+            <div>
+                <nav>
+                  <p><a href="#1">1</a>---<a href="#2">2</a>---<a href="#3">3</a>---<a href="#4">4</a>---<a href="#5">5</a>---<a href="#6">6</a>---<a href="#7">7</a>---<a href="#8">8</a>---<a href="#9">9</a>---<a href="#10">10</a>---<a href="#11">11</a></p>
+                </nav>
+            </div>
             <section id="2">
                 <h1>Section</h1>
                     <h2>Sub-Section 1</h2>
@@ -228,5 +147,16 @@
 
                         </pre>
                     <p>output:</p>
-            </section> 
-         -->
+            </section>
+        </section>
+      </main>
+ 
+      <footer>
+        <p><a href="#top"> Go to the top!</a></p>
+        <p>&copy; <small>2021 CDonekhan LLC</small></p>
+    </footer>
+      
+    </div>
+  </body>
+  
+</html>

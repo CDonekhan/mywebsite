@@ -3,23 +3,37 @@
 /*Background Color */
 html {
     background:#1d1e1f;
-    font-size: 22px;
+    font-size: 1.5em;
 }
+/* Body Attributes */
   body {
     margin:0 auto;
     font-family:"Times";
     text-align: center;
     color: white;
 }
+  /* Span Attributes */
+  span {
+    color:pink;
+  }
 /* Edits attributes of a hyperlink */
-  a{
+  a:link{
     color: skyblue;
   }
   a:hover {
     color: #C82D40;
   }
+  a:visited {
 
-
+    color:aliceblue;
+  }
+a:focus {
+  border:hotpink 5px solid;
+}
+/* Attributes of List Items */
+ol li:first-child {
+  font-weight: bold;
+}
 /* Attributes of Headers*/
   h1{
     color: white;
