@@ -4,13 +4,18 @@
 html {
     background:#1d1e1f;
     font-size: 1.5em;
+    text-align: center;
 }
 /* Body Attributes */
   body {
     margin:0 auto;
     font-family:"Times";
-    text-align: center;
     color: white;
+}
+pre {
+  background-color:dimgray;
+  text-align:left;
+
 }
   /* Span Attributes */
   span {
@@ -31,14 +36,10 @@ a:focus {
   border:hotpink 5px solid;
 }
 /* Attributes of List Items */
-ol li:first-child {
-  font-weight: bold;
-}
 /* Attributes of Headers*/
   h1{
     color: white;
     letter-spacing: 5px;
-    text-align: center;
     border: skyblue 4px solid;
     border-radius: 10px;
     padding: 20px;
@@ -47,7 +48,6 @@ ol li:first-child {
     h2{
       color: white;
       letter-spacing: 5px;
-      text-align: center;
       border: Solid skyblue 2px;
       border-radius: 4px;
       padding: 10px;
@@ -85,6 +85,18 @@ ol li:first-child {
   }
   .no-dash {
     border:dashed skyblue 0px;
+  }
+  .html-example {
+    color:goldenrod;
+
+  }
+  .output-example {
+    background-color:darkslategrey;
+
+  }
+  .no-background {
+    background-color:none;
+
   }
 /*Changes specific to this page*/
 
